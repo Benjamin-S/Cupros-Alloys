@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResearchProjectDefs>
+
+	<!--================================ Tier 2: Basic electricity ====================================-->
+
+	<ResearchProjectDef>
+		<defName>CAL_Tier1Alloy</defName>
+		<label>tier 1 metal alloys</label>
+		<description>Learn the basics of alloying metals. \n  -Unlocks Black Bronze, Sterling Silver, and Rose Gold.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>ElectricSmelting</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>CAL_Tier2Alloy</defName>
+		<label>tier 2 metal alloys</label>
+		<description>Research a stronger form of steel using prior knowledge of alloys. \n  -Unlocks Black Steel.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>CAL_Tier1Alloy</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<!--=============================== Tier 3: Hi-tech research bench ===================================-->
+
+	<ResearchProjectDef>
+		<defName>CAL_Tier3Alloy</defName>
+		<label>tier 3 metal alloys</label>
+		<description>Further research stronger forms of steel and ways to enhance its density or sharpness. \n  -Unlocks Red Steel and Blue Steel.</description>
+		<baseCost>800</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>CAL_Tier2Alloy</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	</ResearchProjectDef>
+
+
+</ResearchProjectDefs>
