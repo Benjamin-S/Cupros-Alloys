@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Resources>
+
+	<ThingDef Name="ResourceBase" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<category>Item</category>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<useHitPoints>true</useHitPoints>
+		<selectable>true</selectable>
+		<altitudeLayer>Item</altitudeLayer>
+		<stackLimit>75</stackLimit>
+		<statBases>
+			<Beauty>-4</Beauty>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<alwaysHaulable>true</alwaysHaulable>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<rotatable>false</rotatable>
+		<pathCost>15</pathCost>
+	</ThingDef>
+
+
+	<ThingDef Name="MetalBase" ParentName="ResourceBase" Abstract="True">
+		<statBases>
+			<Beauty>1</Beauty>
+		</statBases>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<useHitPoints>false</useHitPoints>
+		<stuffProps>
+			<categories>
+				<li>Metallic</li>
+			</categories>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<smeltable>true</smeltable>
+		</stuffProps>
+		<tradeTags>
+			<li>Exotic</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef Name="OreBase" ParentName="MetalBase" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<techLevel>Neolithic</techLevel>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef Name="IngotBase" ParentName="MetalBase" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<stackLimit>150</stackLimit>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+	</ThingDef>
+
+
+	<!--==================== Expanded Power Duplicates/Overwrites ====================-->
+
+
+	<ThingDef ParentName="OreBase">
+		<defName>EXP_Copper</defName>
+		<label>copper</label>
+		<description>An important metal when dealing with temperature and electricity. Can also be used for building structures, tools, and weapons.</description>
+		<graphicData>
+			<texPath>Cupro/Item/Material/Copper</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.5</MarketValue>
+			<Mass>0.4</Mass>
+			<Cleanliness>3</Cleanliness>
+			<SharpDamageMultiplier>0.7</SharpDamageMultiplier>
+			<BluntDamageMultiplier>0.7</BluntDamageMultiplier>
+		</statBases>
+		<deepCommonality>2.5</deepCommonality>
+		<stuffProps>
+			<commonality>0.90</commonality>
+			<color>(100,80,20)</color>
+			<statFactors>
+				<MaxHitPoints>0.8</MaxHitPoints>
+				<Beauty>2</Beauty>
+				<Cleanliness>1.25</Cleanliness>
+				<Flammability>0.2</Flammability>
+				<MeleeWeapon_Cooldown>1</MeleeWeapon_Cooldown>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+	<ThingDef ParentName="OreBase">
+		<defName>EXP_Lead</defName>
+		<label>lead</label>
+		<description>An extremely dense material with a wide array of industrial uses. Can also be used for building structures, tools, and weapons.</description>
+		<graphicData>
+			<texPath>Cupro/Item/Material/Lead</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.2</MarketValue>
+			<Beauty>0</Beauty>
+			<Mass>1.2</Mass>
+			<SharpDamageMultiplier>0.3</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1.2</BluntDamageMultiplier>
+		</statBases>
+		<deepCommonality>0.4</deepCommonality>
+		<stuffProps>
+			<commonality>0.6</commonality>
+			<color>(97,95,103)</color>
+			<statFactors>
+				<MaxHitPoints>0.75</MaxHitPoints>
+				<Beauty>1</Beauty>
+				<Cleanliness>0.5</Cleanliness>
+				<Flammability>0.2</Flammability>
+				<MeleeWeapon_Cooldown>1.15</MeleeWeapon_Cooldown>
+				<WorkToMake>0.8</WorkToMake>
+				<WorkToBuild>0.75</WorkToBuild>
+				<!-- Lead is poisonous, so it affects immune speed when made into a bed -->
+				<ImmunityGainSpeedFactor>0.75</ImmunityGainSpeedFactor>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+
+	<!--==================== Base Metals ====================-->
+
+
+	<!-- Tin may be added to EXP for purposes of solder making and recipe overhauls, but I'm undecided -->
+	<ThingDef ParentName="OreBase">
+		<defName>EXP_Tin</defName>
+		<label>tin</label>
+		<description>A soft and malleable metal most often alloyed with copper to make bronze. Can be used for building structures, tools, and weapons.</description>
+		<graphicData>
+			<texPath>Cupro/Item/Material/Tin</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.7</MarketValue>
+			<Mass>0.3</Mass>
+			<SharpDamageMultiplier>0.6</SharpDamageMultiplier>
+			<BluntDamageMultiplier>0.6</BluntDamageMultiplier>
+		</statBases>
+		<deepCommonality>0.5</deepCommonality>
+		<stuffProps>
+			<commonality>0.70</commonality>
+			<color>(116,101,96)</color>
+			<statFactors>
+				<MaxHitPoints>0.7</MaxHitPoints>
+				<Beauty>1</Beauty>
+				<Flammability>0.2</Flammability>
+				<MeleeWeapon_Cooldown>0.8</MeleeWeapon_Cooldown>
+				<WorkToMake>0.8</WorkToMake>
+				<WorkToBuild>0.8</WorkToBuild>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+	<ThingDef ParentName="OreBase">
+		<defName>CAL_Aluminum</defName>
+		<label>aluminum</label>
+		<description>A soft, yet lightweight metal often alloyed to improve its strength. Can be used for building structures, tools, and weapons.</description>
+		<graphicData>
+			<texPath>Cupro/Item/Material/Aluminum</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.9</MarketValue>
+			<Mass>0.2</Mass>
+			<SharpDamageMultiplier>0.7</SharpDamageMultiplier>
+			<BluntDamageMultiplier>0.7</BluntDamageMultiplier>
+		</statBases>
+		<deepCommonality>2.5</deepCommonality>
+		<stuffProps>
+			<commonality>0.90</commonality>
+			<color>(183,184,179)</color>
+			<statOffsets>
+				<Beauty>2</Beauty>
+			</statOffsets>
+			<statFactors>
+				<MaxHitPoints>0.8</MaxHitPoints>
+				<Cleanliness>1.1</Cleanliness>
+				<Flammability>0.2</Flammability>
+				<DoorOpenSpeed>1.1</DoorOpenSpeed>
+				<MeleeWeapon_Cooldown>1</MeleeWeapon_Cooldown>
+				<WorkToMake>0.8</WorkToMake>
+				<WorkToBuild>0.8</WorkToBuild>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+
+	<!--============================== Utility Alloys ==============================-->
+
+
+	<ThingDef ParentName="IngotBase">
+		<defName>CAL_Plumchalcum</defName>
+		<label>plumchalcum</label>
+		<description>An alloy of lead and copper used in ancient times for plateware and utensils. Can be used for building structures, tools, and weapons.</description>
+		<graphicData>
+			<texPath>Cupro/Item/Material/Ingot_Dull</texPath>
+			<color>(97,92,86)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.9</MarketValue>
+			<Mass>1</Mass>
+			<SharpDamageMultiplier>0.7</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1.2</BluntDamageMultiplier>
+		</statBases>
+		<techLevel>Medieval</techLevel>
+		<stuffProps>
+			<color>(97,92,86)</color>
+			<statFactors>
+				<MaxHitPoints>0.85</MaxHitPoints>
+				<Beauty>1</Beauty>
+				<Cleanliness>0.95</Cleanliness>
+				<Flammability>0.2</Flammability>
+				<MeleeWeapon_Cooldown>1.1</MeleeWeapon_Cooldown>
+				<WorkToMake>0.8</WorkToMake>
+				<WorkToBuild>0.8</WorkToBuild>
+				<!-- Lead is poisonous, so it affects immune speed when made into a bed -->
+				<ImmunityGainSpeedFactor>0.95</ImmunityGainSpeedFactor>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+	<ThingDef ParentName="IngotBase">
+		<defName>CAL_Duralumin</defName>
+		<label>duralumin</label>
+		<description>An light and strong alloy of aluminum and copper. Can be used for building structures, tools, and weapons.</description>
+		<graphicData>
+			<texPath>Cupro/Item/Material/Ingot_Dull</texPath>
+			<color>(220,214,208)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.5</MarketValue>
+			<Mass>0.2</Mass>
+			<SharpDamageMultiplier>1</SharpDamageMultiplier>
+			<BluntDamageMultiplier>0.7</BluntDamageMultiplier>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<stuffProps>
+			<statOffsets>
+				<Beauty>2</Beauty>
+			</statOffsets>
+			<color>(220,214,208)</color>
+			<statFactors>
+				<MaxHitPoints>0.95</MaxHitPoints>
+				<Cleanliness>1.15</Cleanliness>
+				<Flammability>0.2</Flammability>
+				<DoorOpenSpeed>1.1</DoorOpenSpeed>
+				<MeleeWeapon_Cooldown>0.7</MeleeWeapon_Cooldown>
+				<WorkToMake>0.8</WorkToMake>
+				<WorkToBuild>0.8</WorkToBuild>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+	<ThingDef ParentName="IngotBase">
+		<defName>CAL_Bronze</defName>
+		<label>bronze</label>
+		<description>A strong alloy of copper and tin used in ancient times before the discovery of steel. Can be used for building structures, tools, and weapons.</description>
+		<graphicData>
+			<texPath>Cupro/Item/Material/Ingot_Dull</texPath>
+			<color>(87,69,34)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.9</MarketValue>
+			<Mass>0.4</Mass>
+			<SharpDamageMultiplier>1</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1</BluntDamageMultiplier>
+		</statBases>
+		<techLevel>Medieval</techLevel>
+		<stuffProps>
+			<color>(87,69,34)</color>
+			<statFactors>
+				<MaxHitPoints>0.95</MaxHitPoints>
+				<Flammability>0.2</Flammability>
+				<MeleeWeapon_Cooldown>1</MeleeWeapon_Cooldown>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+	<ThingDef ParentName="IngotBase">
+		<defName>CAL_Hepatzion</defName>
+		<label>hepatzion</label>
+		<description>A valuable metal alloy with a decent strength, often used for making sculptures. Can also be used for building structures, tools, and weapons.</description>
+		<graphicData>
+			<texPath>Cupro/Item/Material/Ingot_Dull</texPath>
+			<color>(65,51,70)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>12.5</MarketValue>
+			<Mass>0.3</Mass>
+			<SharpDamageMultiplier>1</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1</BluntDamageMultiplier>
+		</statBases>
+		<techLevel>Medieval</techLevel>
+		<stuffProps>
+			<color>(65,51,70)</color>
+			<statFactors>
+				<MaxHitPoints>0.9</MaxHitPoints>
+				<Beauty>1.2</Beauty>
+				<Flammability>0.2</Flammability>
+				<MeleeWeapon_Cooldown>1</MeleeWeapon_Cooldown>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+
+	<!--============================== Decorative Alloys ==============================-->
+
+
+	<ThingDef ParentName="IngotBase">
+		<defName>CAL_Brass</defName>
+		<label>brass</label>
+		<description>An alloy of copper and aluminum valued for its resemblance to gold. Can be used for building structures, tools, and weapons.</description>
+		<graphicData>
+			<texPath>Cupro/Item/Material/Ingot_Shiny</texPath>
+			<color>(244, 205, 125)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>3</MarketValue>
+			<Mass>0.4</Mass>
+			<SharpDamageMultiplier>0.7</SharpDamageMultiplier>
+			<BluntDamageMultiplier>0.7</BluntDamageMultiplier>
+		</statBases>
+		<techLevel>Medieval</techLevel>
+		<stuffProps>
+			<statOffsets>
+				<Beauty>6</Beauty>
+			</statOffsets>
+			<color>(244, 205, 125)</color>
+			<statFactors>
+				<MaxHitPoints>0.9</MaxHitPoints>
+				<Beauty>2</Beauty>
+				<Cleanliness>1.2</Cleanliness>
+				<Flammability>0.2</Flammability>
+				<WorkToMake>0.9</WorkToMake>
+				<WorkToBuild>0.9</WorkToBuild>
+				<MeleeWeapon_Cooldown>1</MeleeWeapon_Cooldown>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+	<ThingDef ParentName="IngotBase">
+		<defName>CAL_Aurichalcum</defName>
+		<label>aurichalcum</label>
+		<description>A valuable alloy of copper and gold with a vibrant reddish color. Can be used for building structures, tools, and weapons.</description>
+		<graphicData>
+			<texPath>Cupro/Item/Material/Ingot_Shiny</texPath>
+			<color>(229,74,36)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>15</MarketValue>
+			<Mass>0.4</Mass>
+			<SharpDamageMultiplier>0.65</SharpDamageMultiplier>
+			<BluntDamageMultiplier>0.75</BluntDamageMultiplier>
+		</statBases>
+		<techLevel>Medieval</techLevel>
+		<stuffProps>
+			<statOffsets>
+				<Beauty>6</Beauty>
+			</statOffsets>
+			<color>(229,74,36)</color>
+			<statFactors>
+				<MaxHitPoints>0.78</MaxHitPoints>
+				<Beauty>1.5</Beauty>
+				<Cleanliness>1.1</Cleanliness>
+				<Flammability>0.2</Flammability>
+				<MeleeWeapon_Cooldown>1</MeleeWeapon_Cooldown>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+	<ThingDef ParentName="IngotBase">
+		<defName>CAL_SterlingSilver</defName>
+		<label>sterling silver</label>
+		<description>A valuable alloy of silver and copper, often used for making sculptures. Can also be used for building structures, tools, and weapons.</description>
+		<graphicData>
+			<texPath>Cupro/Item/Material/Ingot_Shiny</texPath>
+			<color>(228,214,197)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>6.25</MarketValue>
+			<SharpDamageMultiplier>0.6</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1.2</BluntDamageMultiplier>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<stuffProps>
+			<color>(228,214,197)</color>
+			<statOffsets>
+				<Beauty>6</Beauty>
+			</statOffsets>
+			<statFactors>
+				<MaxHitPoints>0.7</MaxHitPoints>
+				<Flammability>0.2</Flammability>
+				<Beauty>1.5</Beauty>
+				<WorkToMake>1.2</WorkToMake>
+				<MeleeWeapon_Cooldown>1</MeleeWeapon_Cooldown>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+	<ThingDef ParentName="IngotBase">
+		<defName>CAL_RoseGold</defName>
+		<label>rose gold</label>
+		<description>A valuable alloy of gold and copper, often used for making sculptures. Can also be used for building structures, tools, and weapons.</description>
+		<graphicData>
+			<texPath>Cupro/Item/Material/Ingot_Shiny</texPath>
+			<color>(250,180,140)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>45.6</MarketValue>
+			<SharpDamageMultiplier>0.7</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1.5</BluntDamageMultiplier>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<stuffProps>
+			<color>(250,180,140)</color>
+			<statOffsets>
+				<Beauty>14</Beauty>
+			</statOffsets>
+			<statFactors>
+				<MaxHitPoints>0.65</MaxHitPoints>
+				<Beauty>4</Beauty>
+				<Flammability>0.2</Flammability>
+				<MeleeWeapon_Cooldown>1</MeleeWeapon_Cooldown>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+	<ThingDef ParentName="IngotBase">
+		<defName>CAL_Electrum</defName>
+		<label>electrum</label>
+		<description>A valuable alloy of gold and silver, often used for making sculptures. Can also be used for building structures, tools, and weapons.</description>
+		<graphicData>
+			<texPath>Cupro/Item/Material/Ingot_Shiny</texPath>
+			<color>(249,239,170)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>49.4</MarketValue>
+			<SharpDamageMultiplier>0.4</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1.13</BluntDamageMultiplier>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<stuffProps>
+			<color>(249,239,170)</color>
+			<statOffsets>
+				<Beauty>9</Beauty>
+			</statOffsets>
+			<statFactors>
+				<MaxHitPoints>0.65</MaxHitPoints>
+				<Beauty>3.5</Beauty>
+				<Flammability>0.2</Flammability>
+				<MeleeWeapon_Cooldown>1.05</MeleeWeapon_Cooldown>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+
+	<!--============================== Advanced Alloys ==============================-->
+
+
+	<ThingDef ParentName="IngotBase">
+		<defName>CAL_BlackSteel</defName>
+		<label>black steel</label>
+		<description>Steel alloyed with hepatzion to slightly increase its durability. Can be used for building structures, tools, and weapons.</description>
+		<graphicData>
+			<texPath>Cupro/Item/Material/Ingot_Dull</texPath>
+			<color>(40,30,38)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>9.9</MarketValue>
+			<Mass>0.4</Mass>
+			<SharpDamageMultiplier>1.2</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1.2</BluntDamageMultiplier>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<stuffProps>
+			<color>(40,30,38)</color>
+			<statOffsets>
+				<Beauty>1</Beauty>
+			</statOffsets>
+			<statFactors>
+				<MaxHitPoints>1.2</MaxHitPoints>
+				<Flammability>0.2</Flammability>
+				<MeleeWeapon_Cooldown>1</MeleeWeapon_Cooldown>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+
+	<ThingDef ParentName="IngotBase">
+		<defName>CAL_Plastin</defName>
+		<label>plastin</label>
+		<description>A durable alloy of tin and plasteel useful for weapons. Can also be used for building structures, tools, and sculptures.</description>
+		<graphicData>
+			<texPath>Cupro/Item/Material/Ingot_Dull</texPath>
+			<color>(100,124,139)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>9.8</MarketValue>
+			<Mass>0.38</Mass>
+			<SharpDamageMultiplier>1.2</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1</BluntDamageMultiplier>
+		</statBases>
+		<techLevel>Spacer</techLevel>
+		<stuffProps>
+			<color>(100,124,139)</color>
+			<statFactors>
+				<MaxHitPoints>1.5</MaxHitPoints>
+				<Flammability>0.2</Flammability>
+				<MeleeWeapon_Cooldown>0.8</MeleeWeapon_Cooldown>
+				<WorkToMake>0.9</WorkToMake>
+				<WorkToBuild>0.9</WorkToBuild>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+</Resources>
+
+
+
+
+
+

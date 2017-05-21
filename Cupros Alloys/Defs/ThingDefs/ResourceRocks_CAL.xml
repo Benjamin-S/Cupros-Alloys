@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Resources>
+
+	<ThingDef Name="BuildingNaturalBase" Abstract="True">
+		<category>Building</category>
+		<selectable>true</selectable>
+		<drawerType>MapMeshOnly</drawerType>
+		<filthLeaving>RockRubble</filthLeaving>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+	</ThingDef>
+
+
+	<ThingDef Name="RockBase" ParentName="BuildingNaturalBase" Abstract="True" >
+		<thingClass>Mineable</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Linked/Rock_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Rock</li>
+				<li>MapEdge</li>
+			</linkFlags>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<coversFloor>true</coversFloor>
+		<neverMultiSelect>true</neverMultiSelect>
+		<rotatable>false</rotatable>
+		<saveCompressible>true</saveCompressible>
+		<holdsRoof>true</holdsRoof>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<blockLight>true</blockLight>
+		<mineable>true</mineable>
+		<statBases>
+			<Flammability>0</Flammability>
+		</statBases>
+		<building>
+			<isInert>true</isInert>
+			<isNaturalRock>true</isNaturalRock>
+			<canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+			<deconstructible>false</deconstructible>
+		</building>
+	</ThingDef>
+
+
+
+	<ThingDef ParentName="RockBase">
+		<defName>CAL_MineableBauxite</defName>
+		<label>bauxite deposit</label>
+		<description>A vein of aluminum ore.</description>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(151,84,41)</color>
+			<colorTwo>(183,184,179)</colorTwo>
+		</graphicData>
+		<statBases>
+			<Beauty>-1</Beauty>
+			<MaxHitPoints>1100</MaxHitPoints>
+		</statBases>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>CAL_BauxiteSpawner</mineableThing>
+			<mineableYield>1</mineableYield>
+			<mineableScatterCommonality>0.65</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>
+				<min>6</min>
+				<max>18</max>
+			</mineableScatterLumpSizeRange>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="RockBase">
+		<defName>EXP_MineableCassiterite</defName>
+		<label>cassiterite deposit</label>
+		<description>A vein of tin ore.</description>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(130,81,38)</color>
+			<colorTwo>(57,51,48)</colorTwo>
+		</graphicData>
+		<statBases>
+			<Beauty>1</Beauty>
+			<MaxHitPoints>1000</MaxHitPoints>
+		</statBases>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>CAL_CassiteriteSpawner</mineableThing>
+			<mineableYield>1</mineableYield>
+			<mineableScatterCommonality>0.5</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>
+				<min>6</min>
+				<max>17</max>
+			</mineableScatterLumpSizeRange>
+		</building>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="RockBase">
+		<defName>EXP_MineableCopper</defName>
+		<label>copper deposit</label>
+		<description>A vein of copper ore.</description>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(135,130,95)</color>
+			<colorTwo>(155,190,140)</colorTwo>
+		</graphicData>
+		<statBases>
+			<Beauty>2</Beauty>
+			<MaxHitPoints>1100</MaxHitPoints>
+		</statBases>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>EXP_CopperSpawner</mineableThing>
+			<mineableYield>1</mineableYield>
+			<mineableScatterCommonality>0.65</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>
+				<min>8</min>
+				<max>25</max>
+			</mineableScatterLumpSizeRange>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="RockBase">
+		<defName>EXP_MineableGalena</defName>
+		<label>galena deposit</label>
+		<description>A vein of lead ore. Traces of silver are also present.</description>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(114,92,83)</color>
+			<colorTwo>(50,45,75)</colorTwo>
+		</graphicData>
+		<statBases>
+			<Beauty>2</Beauty>
+			<MaxHitPoints>1800</MaxHitPoints>
+		</statBases>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>EXP_GalenaSpawner</mineableThing>
+			<mineableYield>1</mineableYield>
+			<mineableScatterCommonality>0.65</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>
+				<min>6</min>
+				<max>17</max>
+			</mineableScatterLumpSizeRange>
+		</building>
+	</ThingDef>
+
+
+</Resources>

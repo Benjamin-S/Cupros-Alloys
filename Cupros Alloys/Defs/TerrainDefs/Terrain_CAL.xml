@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TerrainDefs>
+
+	<TerrainDef Name="FloorBase" Abstract="True">
+		<layerable>true</layerable>
+		<affordances>
+			<li>Light</li>
+			<li>Heavy</li>
+			<li>SmoothHard</li>
+		</affordances>
+		<statBases>
+			<WorkToBuild>135</WorkToBuild>
+		</statBases>
+		<designationCategory>Floors</designationCategory>
+		<Fertility>0</Fertility>
+		<constructEffect>ConstructDirt</constructEffect>
+		<AcceptTerrainSourceFilth>True</AcceptTerrainSourceFilth>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+	</TerrainDef>
+
+	<TerrainDef Name="AlloyFloorBase" ParentName="FloorBase" Abstract="True">
+		<RenderPrecedence>230</RenderPrecedence>
+		<texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
+		<EdgeType>Hard</EdgeType>
+		<constructEffect>ConstructMetal</constructEffect>
+	</TerrainDef>
+	
+	
+	<!--==================== Expanded Power Duplicates/Overwrites ====================-->
+	
+	
+	<TerrainDef ParentName="AlloyFloorBase">
+		<DefName>EXP_CopperTile</DefName>
+		<label>sanitary copper tile</label>
+		<Description>Naturally antimicrobial copper tiles useful in hospitals to help prevent patients from getting various infections.</Description>
+		<color>(100,80,20)</color>
+		<statBases>
+			<Cleanliness>0.3</Cleanliness>
+			<WorkToBuild>500</WorkToBuild>
+		</statBases>
+		<CostList>
+			<EXP_Copper>5</EXP_Copper>
+		</CostList>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="AlloyFloorBase">
+		<DefName>EXP_LeadTile</DefName>
+		<label>lead tile</label>
+		<Description>Lead tiles, for a dark look. Not healthy to be around, but quick to build.</Description>
+		<color>(97,95,103)</color>
+		<statBases>
+			<Cleanliness>-0.2</Cleanliness>
+			<WorkToBuild>200</WorkToBuild>
+		</statBases>
+		<CostList>
+			<EXP_Lead>5</EXP_Lead>
+		</CostList>
+	</TerrainDef>
+	
+	
+	<!--==================== Base Metals ====================-->
+	
+	
+	<TerrainDef ParentName="AlloyFloorBase">
+		<DefName>CAL_TinTile</DefName>
+		<label>tin tile</label>
+		<Description>Tin tiles, for a utilitarian look. Quick to build, but neutral in terms of beauty.</Description>
+		<color>(116,101,96)</color>
+		<statBases>
+			<Beauty>0</Beauty>
+			<WorkToBuild>250</WorkToBuild>
+		</statBases>
+		<CostList>
+			<EXP_Tin>5</EXP_Tin>
+		</CostList>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="AlloyFloorBase">
+		<DefName>CAL_AluminumTile</DefName>
+		<label>aluminum tile</label>
+		<Description>Aluminum tiles, for a utilitarian look. Quick to build, but neutral in terms of beauty.</Description>
+		<color>(183,184,179)</color>
+		<statBases>
+			<Beauty>0</Beauty>
+			<WorkToBuild>200</WorkToBuild>
+		</statBases>
+		<CostList>
+			<CAL_Aluminum>5</CAL_Aluminum>
+		</CostList>
+	</TerrainDef>
+	
+	
+	<!--==================== Utility Alloys ====================-->
+	
+	
+	<TerrainDef ParentName="AlloyFloorBase">
+		<DefName>CAL_PlumchalcumTile</DefName>
+		<label>plumchalcum tile</label>
+		<Description>Plumchalcum tiles, for a dark look. Quick to build.</Description>
+		<color>(97,92,86)</color>
+		<statBases>
+			<Beauty>1</Beauty>
+			<WorkToBuild>350</WorkToBuild>
+		</statBases>
+		<CostList>
+			<CAL_Plumchalcum>5</CAL_Plumchalcum>
+		</CostList>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="AlloyFloorBase">
+		<DefName>CAL_DuraluminTile</DefName>
+		<label>duralumin tile</label>
+		<Description>Duralumin tiles, for a light and clean look.</Description>
+		<color>(220,214,208)</color>
+		<statBases>
+			<Beauty>1</Beauty>
+			<WorkToBuild>500</WorkToBuild>
+		</statBases>
+		<CostList>
+			<CAL_Duralumin>5</CAL_Duralumin>
+		</CostList>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="AlloyFloorBase">
+		<DefName>CAL_BronzeTile</DefName>
+		<label>bronze tile</label>
+		<Description>Bronze tiles, for a neutral look.</Description>
+		<color>(87,69,34)</color>
+		<statBases>
+			<Beauty>1</Beauty>
+			<WorkToBuild>600</WorkToBuild>
+		</statBases>
+		<CostList>
+			<CAL_Bronze>5</CAL_Bronze>
+		</CostList>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="AlloyFloorBase">
+		<DefName>CAL_HepatzionTile</DefName>
+		<label>hepatzion tile</label>
+		<Description>Hepatzion tiles, for a dark and clean look. Pretty, but labor-intensive.</Description>
+		<color>(45,30,40)</color>
+		<statBases>
+			<Beauty>1</Beauty>
+			<WorkToBuild>750</WorkToBuild>
+		</statBases>
+		<CostList>
+			<CAL_Hepatzion>5</CAL_Hepatzion>
+		</CostList>
+	</TerrainDef>
+	
+	
+	<!--==================== Decorative Alloys ====================-->
+	
+	
+	<TerrainDef ParentName="AlloyFloorBase">
+		<DefName>CAL_BrassTile</DefName>
+		<label>brass tile</label>
+		<Description>A cheaper alternative to pure gold flooring. Fits perfectly into all kinds of luxurious rooms.</Description>
+		<color>(244, 205, 125)</color>
+		<statBases>
+			<Beauty>2</Beauty>
+			<Cleanliness>0.2</Cleanliness>
+			<WorkToBuild>400</WorkToBuild>
+		</statBases>
+		<CostList>
+			<CAL_Brass>5</CAL_Brass>
+		</CostList>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="AlloyFloorBase">
+		<DefName>CAL_AurichalcumTile</DefName>
+		<label>aurichalcum tile</label>
+		<Description>A vibrant flooring for a flashy look. Fits into all kinds of luxurious rooms.</Description>
+		<color>(229,74,36)</color>
+		<statBases>
+			<Beauty>1</Beauty>
+			<Cleanliness>0.1</Cleanliness>
+			<WorkToBuild>800</WorkToBuild>
+		</statBases>
+		<CostList>
+			<CAL_Aurichalcum>5</CAL_Aurichalcum>
+		</CostList>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="AlloyFloorBase">
+		<DefName>CAL_SterlingSilverTile</DefName>
+		<label>sterling silver tile</label>
+		<Description>A slightly cheaper alternative to pure silver without sacrificing beauty. Fits perfectly into all kinds of luxurious rooms.</Description>
+		<color>(228,214,197)</color>
+		<statBases>
+			<Beauty>2</Beauty>
+			<Cleanliness>0.1</Cleanliness>
+			<WorkToBuild>1000</WorkToBuild>
+		</statBases>
+		<CostList>
+			<CAL_SterlingSilver>5</CAL_SterlingSilver>
+		</CostList>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="AlloyFloorBase">
+		<DefName>CAL_RoseGoldTile</DefName>
+		<label>rose gold tile</label>
+		<Description>A beautiful and impressive kind of floor. Very expensive and requires a lot of work to build.</Description>
+		<color>(250,180,140)</color>
+		<statBases>
+			<Beauty>4</Beauty>
+			<WorkToBuild>1200</WorkToBuild>
+		</statBases>
+		<CostList>
+			<CAL_RoseGold>5</CAL_RoseGold>
+		</CostList>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="AlloyFloorBase">
+		<DefName>CAL_ElectrumTile</DefName>
+		<label>electrum tile</label>
+		<Description>An elegant flooring that strikes the perfect balance between gold and silver. Fits perfectly into all kinds of luxurious rooms.</Description>
+		<color>(249,239,170)</color>
+		<statBases>
+			<Beauty>3</Beauty>
+			<Cleanliness>0.1</Cleanliness>
+			<WorkToBuild>1000</WorkToBuild>
+		</statBases>
+		<CostList>
+			<CAL_Electrum>5</CAL_Electrum>
+		</CostList>
+	</TerrainDef>
+	
+	
+	<!--==================== Advanced Alloys ====================-->
+	
+	
+	<TerrainDef ParentName="AlloyFloorBase">
+		<DefName>CAL_BlackSteelTile</DefName>
+		<label>black steel tile</label>
+		<Description>Strong metal tiles, for a dark and clean look. Pretty, but labor-intensive.</Description>
+		<color>(30,28,30)</color>
+		<statBases>
+			<Beauty>1</Beauty>
+			<WorkToBuild>1500</WorkToBuild>
+		</statBases>
+		<CostList>
+			<CAL_BlackSteel>5</CAL_BlackSteel>
+		</CostList>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="AlloyFloorBase">
+		<DefName>CAL_PlastinTile</DefName>
+		<label>plastin tile</label>
+		<Description>Metal tiles, for that spaceship look. Very expensive and requires a lot of work to build.</Description>
+		<color>(100,124,139)</color>
+		<statBases>
+			<Beauty>1</Beauty>
+			<WorkToBuild>1800</WorkToBuild>
+		</statBases>
+		<CostList>
+			<CAL_Plastin>5</CAL_Plastin>
+		</CostList>
+	</TerrainDef>
+
+</TerrainDefs>
