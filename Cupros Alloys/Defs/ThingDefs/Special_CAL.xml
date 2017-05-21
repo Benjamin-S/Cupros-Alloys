@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+	<ThingDef Name="ItemSpawnerBase" ParentName="ResourceBase" Abstract="True">
+		<description>null</description>
+		<graphicData>
+			<texPath>Cupro/Null</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<resourceReadoutPriority>First</resourceReadoutPriority>
+		<useHitPoints>false</useHitPoints>
+		<statBases>
+			<MarketValue>0</MarketValue>
+		</statBases>
+	</ThingDef>
+	
+	
+	
+	
+	<ThingDef ParentName="ItemSpawnerBase">
+		<defName>EXP_CopperSpawner</defName>
+		<thingClass>CuprosAlloys.CopperItemSpawner</thingClass>
+		<label>copper spawner</label>
+	</ThingDef>
+	
+	<ThingDef ParentName="ItemSpawnerBase">
+		<defName>EXP_GalenaSpawner</defName>
+		<thingClass>CuprosAlloys.GalenaItemSpawner</thingClass>
+		<label>galena spawner</label>
+	</ThingDef>
+	
+	<ThingDef ParentName="ItemSpawnerBase">
+		<defName>CAL_BauxiteSpawner</defName>
+		<thingClass>CuprosAlloys.BauxiteItemSpawner</thingClass>
+		<label>bauxite spawner</label>
+	</ThingDef>
+	
+	<ThingDef ParentName="ItemSpawnerBase">
+		<defName>CAL_CassiteriteSpawner</defName>
+		<thingClass>CuprosAlloys.CassiteriteItemSpawner</thingClass>
+		<label>cassiterite spawner</label>
+	</ThingDef>
+
+</ThingDefs>
