@@ -16,7 +16,7 @@ namespace CuprosAlloys {
 				}
 			}
 
-      SpawnRandomQuantity(ThingDef.Named("EXP_Copper"), 10, 20);
+      SpawnRandomQuantity(ThingDef.Named("EXP_Copper"), 20, 40);
       Destroy();
     }
   }
