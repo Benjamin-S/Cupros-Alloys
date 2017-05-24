@@ -15,7 +15,7 @@
 	<!--============================== Utility Alloys ==============================-->
 
 
-	<RecipeDef>
+	<RecipeDef ParentName="AlloyBase">
 		<defName>CAL_MakePlumchalcum</defName>
 		<label>smelt plumchalcum</label>
 		<description>Use intense heat to melt and mix metals, creating plumchalcum. Makes 10 ingots.</description>
@@ -53,7 +53,7 @@
 		</researchPrerequisite>
 	</RecipeDef>
 
-	<RecipeDef>
+	<RecipeDef ParentName="AlloyBase">
 		<defName>CAL_MakeDuralumin</defName>
 		<label>smelt duralumin</label>
 		<description>Use intense heat to melt and mix metals, creating duralumin. Makes 10 ingots.</description>
@@ -91,7 +91,7 @@
 		</researchPrerequisite>
 	</RecipeDef>
 
-	<RecipeDef>
+	<RecipeDef ParentName="AlloyBase">
 		<defName>CAL_MakeBronze</defName>
 		<label>smelt bronze</label>
 		<description>Use intense heat to melt and mix metals, creating bronze. Makes 10 ingots.</description>
@@ -129,7 +129,7 @@
 		</researchPrerequisite>
 	</RecipeDef>
 
-	<RecipeDef>
+	<RecipeDef ParentName="AlloyBase">
 		<defName>CAL_MakeHepatzion</defName>
 		<label>smelt hepatzion</label>
 		<description>Use intense heat to melt and mix metals, creating hepatzion. Makes 10 ingots.</description>
@@ -150,7 +150,7 @@
 						<li>Silver</li>
 					</thingDefs>
 				</filter>
-				<count>0.5</count>
+				<count>1</count>
 			</li>
 			<li>
 				<filter>
@@ -158,7 +158,7 @@
 						<li>Gold</li>
 					</thingDefs>
 				</filter>
-				<count>0.5</count>
+				<count>1</count>
 			</li>
 		</ingredients>
 		<products>
@@ -180,7 +180,7 @@
 	<!--============================== Decorative Alloys ==============================-->
 
 
-	<RecipeDef>
+	<RecipeDef ParentName="AlloyBase">
 		<defName>CAL_MakeBrass</defName>
 		<label>smelt brass</label>
 		<description>Use intense heat to melt and mix metals, creating brass. Makes 10 ingots.</description>
@@ -218,7 +218,7 @@
 		</researchPrerequisite>
 	</RecipeDef>
 
-	<RecipeDef>
+	<RecipeDef ParentName="AlloyBase">
 		<defName>CAL_MakeAurichalcum</defName>
 		<label>smelt aurichalcum</label>
 		<description>Use intense heat to melt and mix metals, creating aurichalcum. Makes 10 ingots.</description>
@@ -239,7 +239,7 @@
 						<li>Gold</li>
 					</thingDefs>
 				</filter>
-				<count>0.5</count>
+				<count>1</count>
 			</li>
 		</ingredients>
 		<products>
@@ -256,7 +256,7 @@
 		</researchPrerequisite>
 	</RecipeDef>
 
-	<RecipeDef>
+	<RecipeDef ParentName="AlloyBase">
 		<defName>CAL_MakeSterlingSilver</defName>
 		<label>smelt sterling silver</label>
 		<description>Use intense heat to melt and mix metals, creating sterling silver. Makes 10 ingots.</description>
@@ -269,7 +269,7 @@
 						<li>Silver</li>
 					</thingDefs>
 				</filter>
-				<count>1.75</count>
+				<count>3.5</count>
 			</li>
 			<li>
 				<filter>
@@ -294,7 +294,7 @@
 		</researchPrerequisite>
 	</RecipeDef>
 
-	<RecipeDef>
+	<RecipeDef ParentName="AlloyBase">
 		<defName>CAL_MakeRoseGold</defName>
 		<label>smelt rose gold</label>
 		<description>Use intense heat to melt and mix metals, creating rose gold. Makes 10 ingots.</description>
@@ -307,7 +307,7 @@
 						<li>Gold</li>
 					</thingDefs>
 				</filter>
-				<count>1.75</count>
+				<count>3.5</count>
 			</li>
 			<li>
 				<filter>
@@ -332,7 +332,7 @@
 		</researchPrerequisite>
 	</RecipeDef>
 
-	<RecipeDef>
+	<RecipeDef ParentName="AlloyBase">
 		<defName>CAL_MakeElectrum</defName>
 		<label>smelt electrum</label>
 		<description>Use intense heat to melt and mix metals, creating electrum. Makes 10 ingots.</description>
@@ -345,7 +345,7 @@
 						<li>Gold</li>
 					</thingDefs>
 				</filter>
-				<count>1.25</count>
+				<count>2.5</count>
 			</li>
 			<li>
 				<filter>
@@ -353,7 +353,7 @@
 						<li>Silver</li>
 					</thingDefs>
 				</filter>
-				<count>1.25</count>
+				<count>2.5</count>
 			</li>
 		</ingredients>
 		<products>
@@ -374,7 +374,7 @@
 	<!--============================== Advanced Alloys ==============================-->
 
 
-	<RecipeDef>
+	<RecipeDef ParentName="AlloyBase">
 		<defName>CAL_MakeBlackSteel</defName>
 		<label>smelt black steel</label>
 		<description>Use intense heat to melt and mix metals, creating black steel. Makes 10 ingots.</description>
@@ -412,7 +412,7 @@
 		</researchPrerequisite>
 	</RecipeDef>
 
-	<RecipeDef>
+	<RecipeDef ParentName="AlloyBase">
 		<defName>CAL_MakePlastin</defName>
 		<label>smelt plastin</label>
 		<description>Use intense heat to melt and mix metals, creating plastin. Makes 10 ingots.</description>

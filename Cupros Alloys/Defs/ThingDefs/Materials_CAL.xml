@@ -29,6 +29,9 @@
 		<soundInteract>Metal_Drop</soundInteract>
 		<soundDrop>Metal_Drop</soundDrop>
 		<useHitPoints>false</useHitPoints>
+		<thingCategories>
+			<li>CAL_Metals</li>
+		</thingCategories>
 		<stuffProps>
 			<categories>
 				<li>Metallic</li>
@@ -49,9 +52,6 @@
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<techLevel>Neolithic</techLevel>
-		<thingCategories>
-			<li>ResourcesRaw</li>
-		</thingCategories>
 	</ThingDef>
 
 	<ThingDef Name="IngotBase" ParentName="MetalBase" Abstract="True">
@@ -59,9 +59,6 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<stackLimit>150</stackLimit>
-		<thingCategories>
-			<li>Manufactured</li>
-		</thingCategories>
 	</ThingDef>
 
 
