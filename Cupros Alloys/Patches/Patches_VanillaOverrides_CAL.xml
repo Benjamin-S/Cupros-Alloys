@@ -2,7 +2,7 @@
 <Patch>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>//ThingDef[defName="Silver"]/thingCategories</xpath>
+		<xpath>/Defs/ThingDef[defName="Silver"]/thingCategories</xpath>
 		<value>
 			<thingCategories>
 				<li>CAL_Metals</li>
@@ -11,7 +11,7 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationReplace">
-		<xpath>//ThingDef[defName="Gold"]/thingCategories</xpath>
+		<xpath>/Defs/ThingDef[defName="Gold"]/thingCategories</xpath>
 		<value>
 			<thingCategories>
 				<li>CAL_Metals</li>
@@ -20,7 +20,7 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationReplace">
-		<xpath>//ThingDef[defName="Steel"]/thingCategories</xpath>
+		<xpath>/Defs/ThingDef[defName="Steel"]/thingCategories</xpath>
 		<value>
 			<thingCategories>
 				<li>CAL_Metals</li>
@@ -29,7 +29,7 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationReplace">
-		<xpath>//ThingDef[defName="Plasteel"]/thingCategories</xpath>
+		<xpath>/Defs/ThingDef[defName="Plasteel"]/thingCategories</xpath>
 		<value>
 			<thingCategories>
 				<li>CAL_Metals</li>
@@ -38,7 +38,7 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationReplace">
-		<xpath>//ThingDef[defName="Uranium"]/thingCategories</xpath>
+		<xpath>/Defs/ThingDef[defName="Uranium"]/thingCategories</xpath>
 		<value>
 			<thingCategories>
 				<li>CAL_Metals</li>
