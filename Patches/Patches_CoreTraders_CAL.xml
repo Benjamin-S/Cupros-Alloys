@@ -5,7 +5,7 @@
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<Operations>
-			<li Class="CuprosStones.PatchOperationFindMod">
+			<li Class="CuprosAlloys.PatchOperationFindMod">
 				<modName>Expanded Power</modName>
 				<success>Invert</success>
 			</li>
