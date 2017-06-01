@@ -96,7 +96,7 @@
 			</li>
 		</Operations>
 	</Operation>
-	
+
 	<!-- Multiple sequences, because they just don't get applied in a single one -->
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
@@ -112,7 +112,7 @@
 			</li>
 		</Operations>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<Operations>
@@ -129,7 +129,7 @@
 			</li>
 		</Operations>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<Operations>
@@ -146,7 +146,7 @@
 			</li>
 		</Operations>
 	</Operation>
-	
+
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<Operations>
@@ -157,6 +157,37 @@
 				<xpath>/RecipeDefs/RecipeDef[@Name="AlloyBase"]/recipeUsers</xpath>
 				<value>
 					<li>POW_Crucible</li>
+				</value>
+			</li>
+		</Operations>
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<Operations>
+			<li Class="CuprosAlloys.PatchOperationFindMod">
+				<modName>Powerless!</modName>
+			</li>
+			<li Class="PatchOperationInsert">
+				<xpath>/WorkGivers/WorkGiverDef[@Name="CAL_CrucibleInsertion"]</xpath>
+				<Order>Prepend</Order>
+				<value>
+					<WorkGiverDef>
+						<defName>POW_DoBillsCrucible</defName>
+						<label>smelt alloys at crucible</label>
+						<giverClass>WorkGiver_DoBill</giverClass>
+						<workType>Smithing</workType>
+						<priorityInType>89</priorityInType>
+						<fixedBillGiverDefs>
+							<li>POW_Crucible</li>
+						</fixedBillGiverDefs>
+						<verb>alloy at</verb>
+						<gerund>alloying at</gerund>
+						<requiredCapacities>
+							<li>Manipulation</li>
+						</requiredCapacities>
+						<prioritizeSustains>true</prioritizeSustains>
+					</WorkGiverDef>
 				</value>
 			</li>
 		</Operations>
