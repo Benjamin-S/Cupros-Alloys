@@ -57,7 +57,7 @@
 		<defName>CAL_MakeDuralumin</defName>
 		<label>smelt duralumin</label>
 		<description>Use intense heat to melt and mix metals, creating duralumin. Makes 10 ingots.</description>
-		<jobString>Smelting bronze.</jobString>
+		<jobString>Smelting duralumin.</jobString>
 		<workAmount>900</workAmount>
 		<ingredients>
 			<li>
