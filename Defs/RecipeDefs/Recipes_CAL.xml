@@ -5,6 +5,7 @@
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
 		<effectWorking>Smelt</effectWorking>
 		<soundWorking>Recipe_Smelt</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
 		<targetCountAdjustment>10</targetCountAdjustment>
 		<recipeUsers>
 			<li>ElectricSmelter</li>
