@@ -89,6 +89,7 @@
 				<Cleanliness>1.25</Cleanliness>
 				<Flammability>0.2</Flammability>
 				<MeleeWeapon_Cooldown>1</MeleeWeapon_Cooldown>
+				<ArmorRating_Electric>0.8</ArmorRating_Electric>
 			</statFactors>
 		</stuffProps>
 	</ThingDef>
@@ -119,6 +120,8 @@
 				<MeleeWeapon_Cooldown>1.15</MeleeWeapon_Cooldown>
 				<WorkToMake>0.8</WorkToMake>
 				<WorkToBuild>0.75</WorkToBuild>
+				<ArmorRating_Blunt>1.2</ArmorRating_Blunt>
+				<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
 				<!-- Lead is poisonous, so it affects immune speed when made into a bed -->
 				<ImmunityGainSpeedFactor>0.75</ImmunityGainSpeedFactor>
 			</statFactors>
@@ -154,6 +157,7 @@
 				<MeleeWeapon_Cooldown>0.8</MeleeWeapon_Cooldown>
 				<WorkToMake>0.8</WorkToMake>
 				<WorkToBuild>0.8</WorkToBuild>
+				<ArmorRating_Sharp>0.9</ArmorRating_Sharp>
 			</statFactors>
 		</stuffProps>
 	</ThingDef>
@@ -186,6 +190,8 @@
 				<MeleeWeapon_Cooldown>1</MeleeWeapon_Cooldown>
 				<WorkToMake>0.8</WorkToMake>
 				<WorkToBuild>0.8</WorkToBuild>
+				<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+				<ArmorRating_Blunt>0.9</ArmorRating_Blunt>
 			</statFactors>
 		</stuffProps>
 	</ThingDef>
@@ -219,6 +225,9 @@
 				<MeleeWeapon_Cooldown>1.1</MeleeWeapon_Cooldown>
 				<WorkToMake>0.8</WorkToMake>
 				<WorkToBuild>0.8</WorkToBuild>
+				<ArmorRating_Blunt>1.1</ArmorRating_Blunt>
+				<ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+				<ArmorRating_Electric>0.9</ArmorRating_Electric>
 				<!-- Lead is poisonous, so it affects immune speed when made into a bed -->
 				<ImmunityGainSpeedFactor>0.95</ImmunityGainSpeedFactor>
 			</statFactors>
@@ -339,6 +348,8 @@
 				<Flammability>0.2</Flammability>
 				<WorkToMake>0.9</WorkToMake>
 				<WorkToBuild>0.9</WorkToBuild>
+				<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+				<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
 				<MeleeWeapon_Cooldown>1</MeleeWeapon_Cooldown>
 			</statFactors>
 		</stuffProps>
@@ -487,6 +498,8 @@
 				<MaxHitPoints>1.2</MaxHitPoints>
 				<Flammability>0.2</Flammability>
 				<MeleeWeapon_Cooldown>1</MeleeWeapon_Cooldown>
+				<ArmorRating_Blunt>1.2</ArmorRating_Blunt>
+				<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
 			</statFactors>
 		</stuffProps>
 	</ThingDef>
@@ -515,6 +528,8 @@
 				<MeleeWeapon_Cooldown>0.8</MeleeWeapon_Cooldown>
 				<WorkToMake>0.9</WorkToMake>
 				<WorkToBuild>0.9</WorkToBuild>
+				<ArmorRating_Blunt>1.4</ArmorRating_Blunt>
+				<ArmorRating_Sharp>1.4</ArmorRating_Sharp>
 			</statFactors>
 		</stuffProps>
 	</ThingDef>
