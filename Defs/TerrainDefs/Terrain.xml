@@ -157,6 +157,7 @@
 		<DefName>CAL_BrassTile</DefName>
 		<label>brass tile</label>
 		<Description>A cheaper alternative to pure gold flooring. Fits perfectly into all kinds of luxurious rooms.</Description>
+		<texturePath>Cupro/Terrain/ShinyFloorTile</texturePath>
 		<color>(244, 205, 125)</color>
 		<statBases>
 			<Beauty>2</Beauty>
@@ -172,6 +173,7 @@
 		<DefName>CAL_AurichalcumTile</DefName>
 		<label>aurichalcum tile</label>
 		<Description>A vibrant flooring for a flashy look. Fits into all kinds of luxurious rooms.</Description>
+		<texturePath>Cupro/Terrain/ShinyFloorTile</texturePath>
 		<color>(229,74,36)</color>
 		<statBases>
 			<Beauty>1</Beauty>
@@ -187,6 +189,7 @@
 		<DefName>CAL_SterlingSilverTile</DefName>
 		<label>sterling silver tile</label>
 		<Description>A slightly cheaper alternative to pure silver without sacrificing beauty. Fits perfectly into all kinds of luxurious rooms.</Description>
+		<texturePath>Cupro/Terrain/ShinyFloorTile</texturePath>
 		<color>(228,214,197)</color>
 		<statBases>
 			<Beauty>2</Beauty>
@@ -202,6 +205,7 @@
 		<DefName>CAL_RoseGoldTile</DefName>
 		<label>rose gold tile</label>
 		<Description>A beautiful and impressive kind of floor. Very expensive and requires a lot of work to build.</Description>
+		<texturePath>Cupro/Terrain/ShinyFloorTile</texturePath>
 		<color>(250,180,140)</color>
 		<statBases>
 			<Beauty>4</Beauty>
@@ -216,6 +220,7 @@
 		<DefName>CAL_ElectrumTile</DefName>
 		<label>electrum tile</label>
 		<Description>An elegant flooring that strikes the perfect balance between gold and silver. Fits perfectly into all kinds of luxurious rooms.</Description>
+		<texturePath>Cupro/Terrain/ShinyFloorTile</texturePath>
 		<color>(249,239,170)</color>
 		<statBases>
 			<Beauty>3</Beauty>
