@@ -428,7 +428,7 @@
 			</li>
 		</ingredients>
 		<products>
-			<CAL_ChromePlatedSteel>10</CAL_ChromePlatedSteel>
+			<CAL_ChromePlatedSteel>20</CAL_ChromePlatedSteel>
 		</products>
 		<fixedIngredientFilter>
 			<thingDefs>
