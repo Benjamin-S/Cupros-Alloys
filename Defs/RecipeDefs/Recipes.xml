@@ -11,6 +11,46 @@
 			<li>ElectricSmelter</li>
 		</recipeUsers>
 	</RecipeDef>
+	
+	
+	<RecipeDef>
+		<defName>CAL_ConvertBronze</defName>
+		<label>Convert bronze to steel</label>
+		<description>Convert bronze ingots into steel for general crafting purposes. Makes 4 steel.</description>
+		<jobString>Converting metals.</jobString>
+		<workAmount>50</workAmount>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<targetCountAdjustment>4</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CAL_BismuthBronze</li>
+						<li>CAL_Bronze</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<products>
+			<Steel>4</Steel>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>CAL_BismuthBronze</li>
+				<li>CAL_Bronze</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+		</recipeUsers>
+		<researchPrerequisite>
+			<li>CAL_UtilityAlloys</li>
+		</researchPrerequisite>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
 
 
 	<!--============================== Utility Alloys ==============================-->
@@ -91,6 +131,91 @@
 			<li>CAL_UtilityAlloys</li>
 		</researchPrerequisite>
 	</RecipeDef>
+	
+	<RecipeDef ParentName="AlloyBase">
+		<defName>CAL_MakeZamak</defName>
+		<label>smelt zamak</label>
+		<description>Use intense heat to melt and mix metals, creating zamak. Makes 10 ingots.</description>
+		<jobString>Smelting zamak.</jobString>
+		<workAmount>600</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CAL_Aluminum</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CAL_Zinc</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<products>
+			<CAL_Zamak>10</CAL_Zamak>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>CAL_Aluminum</li>
+				<li>CAL_Zinc</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<researchPrerequisite>
+			<li>CAL_UtilityAlloys</li>
+		</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="AlloyBase">
+		<defName>CAL_MakeBismuthBronze</defName>
+		<label>smelt bismuth bronze</label>
+		<description>Use intense heat to melt and mix metals, creating bismuth bronze. Makes 10 ingots.</description>
+		<jobString>Smelting bronze.</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>EXP_Copper</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CAL_Zinc</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CAL_Bismuth</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<products>
+			<CAL_BismuthBronze>10</CAL_BismuthBronze>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>EXP_Copper</li>
+				<li>CAL_Zinc</li>
+				<li>CAL_Bismuth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<researchPrerequisite>
+			<li>CAL_UtilityAlloys</li>
+		</researchPrerequisite>
+	</RecipeDef>
 
 	<RecipeDef ParentName="AlloyBase">
 		<defName>CAL_MakeBronze</defName>
@@ -111,6 +236,7 @@
 				<filter>
 					<thingDefs>
 						<li>EXP_Tin</li>
+						<li>CAL_Zinc</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -123,6 +249,54 @@
 			<thingDefs>
 				<li>EXP_Copper</li>
 				<li>EXP_Tin</li>
+				<li>CAL_Zinc</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<researchPrerequisite>
+			<li>CAL_UtilityAlloys</li>
+		</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="AlloyBase">
+		<defName>CAL_MakeStainlessSteel</defName>
+		<label>smelt stainless steel</label>
+		<description>Use intense heat to melt and mix metals, creating stainless steel. Makes 10 ingots.</description>
+		<jobString>Smelting stainless steel.</jobString>
+		<workAmount>1300</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CAL_Nickel</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CAL_Chromium</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<CAL_StainlessSteel>10</CAL_StainlessSteel>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>CAL_Nickel</li>
+				<li>CAL_Chromium</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<researchPrerequisite>
@@ -200,6 +374,7 @@
 				<filter>
 					<thingDefs>
 						<li>CAL_Aluminum</li>
+						<li>CAL_Zinc</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -212,6 +387,54 @@
 			<thingDefs>
 				<li>EXP_Copper</li>
 				<li>CAL_Aluminum</li>
+				<li>CAL_Zinc</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<researchPrerequisite>
+			<li>CAL_DecorativeAlloys</li>
+		</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="AlloyBase">
+		<defName>CAL_MakeChromePlatedSteel</defName>
+		<label>smelt chrome-plated steel</label>
+		<description>Use intense heat to melt meatls and coat steel, creating chrome-plated steel. Makes 20 ingots.</description>
+		<jobString>Smelting chrome-plated steel.</jobString>
+		<workAmount>1500</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>18</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CAL_Nickel</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CAL_Chromium</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<CAL_ChromePlatedSteel>10</CAL_ChromePlatedSteel>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>CAL_Nickel</li>
+				<li>CAL_Chromium</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<researchPrerequisite>

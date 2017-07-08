@@ -4,7 +4,7 @@
 	<ResearchProjectDef>
 		<defName>CAL_UtilityAlloys</defName>
 		<label>utility alloys</label>
-		<description>Research alloying metals for utility purposes. \n  -Unlocks Plumchalcum, Duralumin, Bronze, and Hepatzion.</description>
+		<description>Research alloying metals for utility purposes. \n  -Unlocks Plumchalcum, Duralumin, Zamak, Bismuth Bronze, Bronze, Stainless Steel, and Hepatzion.</description>
 		<tab>cP</tab>
 		<baseCost>500</baseCost>
 		<techLevel>Medieval</techLevel>
@@ -18,7 +18,7 @@
 	<ResearchProjectDef>
 		<defName>CAL_DecorativeAlloys</defName>
 		<label>decorative alloys</label>
-		<description>Research alloying metals for decorative purposes. \n  -Unlocks Brass, Aurichalcum, Sterling Silver, Rose Gold, and Electrum.</description>
+		<description>Research alloying metals for decorative purposes. \n  -Unlocks Brass, Chrome-plated Steel, Aurichalcum, Sterling Silver, Rose Gold, and Electrum.</description>
 		<tab>cP</tab>
 		<baseCost>500</baseCost>
 		<techLevel>Industrial</techLevel>

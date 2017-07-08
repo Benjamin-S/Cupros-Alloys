@@ -20,11 +20,19 @@
 							<li>EXP_LeadTile</li>
 							<li>CAL_TinTile</li>
 							<li>CAL_AluminumTile</li>
+							<li>CAL_NickelTile</li>
+							<li>CAL_ZincTile</li>
+							<li>CAL_BismuthTile</li>
+							<li>CAL_ChromiumTile</li>
 							<li>CAL_PlumchalcumTile</li>
 							<li>CAL_DuraluminTile</li>
+							<li>CAL_ZamakTile</li>
+							<li>CAL_BismuthBronzeTile</li>
 							<li>CAL_BronzeTile</li>
+							<li>CAL_StainlessSteelTile</li>
 							<li>CAL_HepatzionTile</li>
 							<li>CAL_BrassTile</li>
+							<li>CAL_ChromePlatedSteelTile</li>
 							<li>CAL_AurichalcumTile</li>
 							<li>CAL_SterlingSilverTile</li>
 							<li>CAL_RoseGoldTile</li>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TerrainDefs>
+
+	<TerrainDef Name="CAL_AlloyFloorBase" ParentName="FloorBase" Abstract="True">
+		<RenderPrecedence>230</RenderPrecedence>
+		<texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
+		<EdgeType>Hard</EdgeType>
+		<constructEffect>ConstructMetal</constructEffect>
+	</TerrainDef>
+	
+	
+	<!--==================== Utility Alloys ====================-->
+	
+	
+	<TerrainDef ParentName="CAL_AlloyFloorBase">
+		<DefName>CAL_PlumchalcumTile</DefName>
+		<label>plumchalcum tile</label>
+		<Description>Plumchalcum tiles, for a dark look. Quick to build.</Description>
+		<color>(97,92,86)</color>
+		<statBases>
+			<Beauty>1</Beauty>
+			<WorkToBuild>350</WorkToBuild>
+		</statBases>
+		<CostList>
+			<CAL_Plumchalcum>5</CAL_Plumchalcum>
+		</CostList>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="CAL_AlloyFloorBase">
+		<DefName>CAL_DuraluminTile</DefName>
+		<label>duralumin tile</label>
+		<Description>Duralumin tiles, for a light and clean look.</Description>
+		<color>(220,214,208)</color>
+		<statBases>
+			<Beauty>1</Beauty>
+			<WorkToBuild>500</WorkToBuild>
+		</statBases>
+		<CostList>
+			<CAL_Duralumin>5</CAL_Duralumin>
+		</CostList>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="CAL_AlloyFloorBase">
+		<DefName>CAL_ZamakTile</DefName>
+		<label>zamak tile</label>
+		<Description>Zamak tiles, for a utilitarian look.</Description>
+		<color>(179,183,187)</color>
+		<statBases>
+			<WorkToBuild>500</WorkToBuild>
+		</statBases>
+		<CostList>
+			<CAL_Zamak>5</CAL_Zamak>
+		</CostList>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="CAL_AlloyFloorBase">
+		<DefName>CAL_BismuthBronzeTile</DefName>
+		<label>bismuth bronze tile</label>
+		<Description>Bismuth bronze tiles, for a neutral look.</Description>
+		<color>(121,128,101)</color>
+		<statBases>
+			<WorkToBuild>600</WorkToBuild>
+		</statBases>
+		<CostList>
+			<CAL_BismuthBronze>5</CAL_BismuthBronze>
+		</CostList>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="CAL_AlloyFloorBase">
+		<DefName>CAL_BronzeTile</DefName>
+		<label>bronze tile</label>
+		<Description>Bronze tiles, for a neutral look.</Description>
+		<color>(87,69,34)</color>
+		<statBases>
+			<Beauty>1</Beauty>
+			<WorkToBuild>600</WorkToBuild>
+		</statBases>
+		<CostList>
+			<CAL_Bronze>5</CAL_Bronze>
+		</CostList>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="CAL_AlloyFloorBase">
+		<DefName>CAL_StainlessSteelTile</DefName>
+		<label>stainless steel tile</label>
+		<Description>Stainless steel tiles, for keeping rooms clean. Neutral in terms of looks and very slow to build.</Description>
+		<color>(200,200,200)</color>
+		<statBases>
+			<Cleanliness>0.4</Cleanliness>
+			<WorkToBuild>1500</WorkToBuild>
+		</statBases>
+		<CostList>
+			<CAL_StainlessSteel>5</CAL_StainlessSteel>
+		</CostList>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="CAL_AlloyFloorBase">
+		<DefName>CAL_HepatzionTile</DefName>
+		<label>hepatzion tile</label>
+		<Description>Hepatzion tiles, for a dark and clean look. Pretty, but labor-intensive.</Description>
+		<color>(45,30,40)</color>
+		<statBases>
+			<Beauty>1</Beauty>
+			<WorkToBuild>750</WorkToBuild>
+		</statBases>
+		<CostList>
+			<CAL_Hepatzion>5</CAL_Hepatzion>
+		</CostList>
+	</TerrainDef>
+
+</TerrainDefs>
