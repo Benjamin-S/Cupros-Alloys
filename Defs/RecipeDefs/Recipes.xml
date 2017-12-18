@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<RecipeDefs>
+<Defs>
 
 	<RecipeDef Name="AlloyBase" Abstract="True">
 		<workSpeedStat>SmeltingSpeed</workSpeedStat>
@@ -13,16 +13,32 @@
 	</RecipeDef>
 	
 	
-	<RecipeDef>
-		<defName>CAL_ConvertBronze</defName>
-		<label>Convert bronze to steel</label>
-		<description>Convert bronze ingots into steel for general crafting purposes. Makes 4 steel.</description>
+	<!--============================== Conversions ==============================-->
+
+
+	<RecipeDef Name="CAL_ConversionBase" Abstract="True">
 		<jobString>Converting metals.</jobString>
 		<workAmount>50</workAmount>
 		<effectWorking>Smelt</effectWorking>
 		<soundWorking>Recipe_Smelt</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<targetCountAdjustment>4</targetCountAdjustment>
+		<products>
+			<Steel>4</Steel>
+		</products>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+		</recipeUsers>
+		<researchPrerequisite>
+			<li>CAL_UtilityAlloys</li>
+		</researchPrerequisite>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+
+	<RecipeDef ParentName="CAL_ConversionBase">
+		<defName>CAL_ConvertBronze</defName>
+		<label>Convert bronze to steel</label>
+		<description>Convert bronze ingots into steel for general crafting purposes. Makes 4 steel.</description>
 		<ingredients>
 			<li>
 				<filter>
@@ -34,22 +50,35 @@
 				<count>5</count>
 			</li>
 		</ingredients>
-		<products>
-			<Steel>4</Steel>
-		</products>
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>CAL_BismuthBronze</li>
 				<li>CAL_Bronze</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		<recipeUsers>
-			<li>CraftingSpot</li>
-		</recipeUsers>
-		<researchPrerequisite>
-			<li>CAL_UtilityAlloys</li>
-		</researchPrerequisite>
-		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+
+	<RecipeDef ParentName="CAL_ConversionBase">
+		<defName>CAL_ConvertAluminum</defName>
+		<label>Convert aluminum alloys to steel</label>
+		<description>Convert duralumin or zamak ingots into steel for general crafting purposes. Makes 4 steel.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CAL_Duralumin</li>
+						<li>CAL_Zamak</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>CAL_Duralumin</li>
+				<li>CAL_Zamak</li>
+			</thingDefs>
+		</fixedIngredientFilter>
 	</RecipeDef>
 
 
@@ -66,7 +95,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>EXP_Lead</li>
+						<li>CAL_Lead</li>
 					</thingDefs>
 				</filter>
 				<count>8</count>
@@ -74,7 +103,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>EXP_Copper</li>
+						<li>CAL_Copper</li>
 					</thingDefs>
 				</filter>
 				<count>2</count>
@@ -85,8 +114,8 @@
 		</products>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>EXP_Lead</li>
-				<li>EXP_Copper</li>
+				<li>CAL_Lead</li>
+				<li>CAL_Copper</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<researchPrerequisite>
@@ -112,7 +141,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>EXP_Copper</li>
+						<li>CAL_Copper</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -124,7 +153,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>CAL_Aluminum</li>
-				<li>EXP_Copper</li>
+				<li>CAL_Copper</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<researchPrerequisite>
@@ -180,7 +209,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>EXP_Copper</li>
+						<li>CAL_Copper</li>
 					</thingDefs>
 				</filter>
 				<count>6</count>
@@ -207,7 +236,7 @@
 		</products>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>EXP_Copper</li>
+				<li>CAL_Copper</li>
 				<li>CAL_Zinc</li>
 				<li>CAL_Bismuth</li>
 			</thingDefs>
@@ -227,7 +256,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>EXP_Copper</li>
+						<li>CAL_Copper</li>
 					</thingDefs>
 				</filter>
 				<count>9</count>
@@ -235,7 +264,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>EXP_Tin</li>
+						<li>CAL_Tin</li>
 						<li>CAL_Zinc</li>
 					</thingDefs>
 				</filter>
@@ -247,9 +276,47 @@
 		</products>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>EXP_Copper</li>
-				<li>EXP_Tin</li>
+				<li>CAL_Copper</li>
+				<li>CAL_Tin</li>
 				<li>CAL_Zinc</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<researchPrerequisite>
+			<li>CAL_UtilityAlloys</li>
+		</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef ParentName="AlloyBase">
+		<defName>CAL_MakeCupronickel</defName>
+		<label>smelt cupronickel</label>
+		<description>Use intense heat to melt and mix metals, creating cupronickel. Makes 10 ingots.</description>
+		<jobString>Smelting cupronickel.</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CAL_Copper</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>CAL_Nickel</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<products>
+			<CAL_Cupronickel>10</CAL_Cupronickel>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>CAL_Copper</li>
+				<li>CAL_Nickel</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<researchPrerequisite>
@@ -314,7 +381,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>EXP_Copper</li>
+						<li>CAL_Copper</li>
 					</thingDefs>
 				</filter>
 				<count>6</count>
@@ -341,7 +408,7 @@
 		</products>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>EXP_Copper</li>
+				<li>CAL_Copper</li>
 				<li>Silver</li>
 				<li>Gold</li>
 			</thingDefs>
@@ -365,7 +432,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>EXP_Copper</li>
+						<li>CAL_Copper</li>
 					</thingDefs>
 				</filter>
 				<count>9</count>
@@ -385,7 +452,7 @@
 		</products>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>EXP_Copper</li>
+				<li>CAL_Copper</li>
 				<li>CAL_Aluminum</li>
 				<li>CAL_Zinc</li>
 			</thingDefs>
@@ -452,7 +519,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>EXP_Copper</li>
+						<li>CAL_Copper</li>
 					</thingDefs>
 				</filter>
 				<count>8</count>
@@ -471,7 +538,7 @@
 		</products>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>EXP_Copper</li>
+				<li>CAL_Copper</li>
 				<li>Gold</li>
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -498,7 +565,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>EXP_Copper</li>
+						<li>CAL_Copper</li>
 					</thingDefs>
 				</filter>
 				<count>3</count>
@@ -510,7 +577,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>Silver</li>
-				<li>EXP_Copper</li>
+				<li>CAL_Copper</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<researchPrerequisite>
@@ -536,7 +603,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>EXP_Copper</li>
+						<li>CAL_Copper</li>
 					</thingDefs>
 				</filter>
 				<count>3</count>
@@ -548,7 +615,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>Gold</li>
-				<li>EXP_Copper</li>
+				<li>CAL_Copper</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<researchPrerequisite>
@@ -646,7 +713,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>EXP_Tin</li>
+						<li>CAL_Tin</li>
 					</thingDefs>
 				</filter>
 				<count>6</count>
@@ -665,7 +732,7 @@
 		</products>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>EXP_Tin</li>
+				<li>CAL_Tin</li>
 				<li>Plasteel</li>
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -674,4 +741,4 @@
 		</researchPrerequisite>
 	</RecipeDef>
 
-</RecipeDefs>
+</Defs>

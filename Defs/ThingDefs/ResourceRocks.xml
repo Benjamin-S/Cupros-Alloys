@@ -1,58 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Resources>
-
-	<ThingDef Name="BuildingNaturalBase" Abstract="True">
-		<category>Building</category>
-		<selectable>true</selectable>
-		<drawerType>MapMeshOnly</drawerType>
-		<filthLeaving>RockRubble</filthLeaving>
-		<scatterableOnMapGen>false</scatterableOnMapGen>
-	</ThingDef>
-
-
-	<ThingDef Name="RockBase" ParentName="BuildingNaturalBase" Abstract="True" >
-		<thingClass>Mineable</thingClass>
-		<graphicData>
-			<texPath>Things/Building/Linked/Rock_Atlas</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<linkType>CornerFiller</linkType>
-			<linkFlags>
-				<li>Rock</li>
-				<li>MapEdge</li>
-			</linkFlags>
-		</graphicData>
-		<altitudeLayer>Building</altitudeLayer>
-		<passability>Impassable</passability>
-		<blockWind>true</blockWind>
-		<castEdgeShadows>true</castEdgeShadows>
-		<fillPercent>1</fillPercent>
-		<coversFloor>true</coversFloor>
-		<neverMultiSelect>true</neverMultiSelect>
-		<rotatable>false</rotatable>
-		<saveCompressible>true</saveCompressible>
-		<holdsRoof>true</holdsRoof>
-		<staticSunShadowHeight>1.0</staticSunShadowHeight>
-		<blockLight>true</blockLight>
-		<mineable>true</mineable>
-		<statBases>
-			<Flammability>0</Flammability>
-		</statBases>
-		<building>
-			<isInert>true</isInert>
-			<isNaturalRock>true</isNaturalRock>
-			<canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-			<deconstructible>false</deconstructible>
-		</building>
-	</ThingDef>
-
-
+<Defs>
 
 	<ThingDef ParentName="RockBase">
 		<defName>CAL_MineableBauxite</defName>
 		<label>bauxite deposit</label>
 		<description>A vein of aluminum ore.</description>
 		<graphicData>
-			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<texPath>Cupro/Object/Structure/RockFlecked_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<color>(157,99,59)</color>
@@ -75,11 +29,11 @@
 	</ThingDef>
 
 	<ThingDef ParentName="RockBase">
-		<defName>EXP_MineableCassiterite</defName>
+		<defName>CAL_MineableCassiterite</defName>
 		<label>cassiterite deposit</label>
 		<description>A vein of tin ore.</description>
 		<graphicData>
-			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<texPath>Cupro/Object/Structure/RockFlecked_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<color>(130,81,38)</color>
@@ -91,8 +45,8 @@
 		</statBases>
 		<building>
 			<isResourceRock>true</isResourceRock>
-			<mineableThing>EXP_Tin</mineableThing>
-			<mineableYield>30</mineableYield>
+			<mineableThing>CAL_Tin</mineableThing>
+			<mineableYield>35</mineableYield>
 			<mineableScatterCommonality>0.5</mineableScatterCommonality>
 			<mineableScatterLumpSizeRange>
 				<min>6</min>
@@ -102,11 +56,11 @@
 	</ThingDef>
 	
 	<ThingDef ParentName="RockBase">
-		<defName>EXP_MineableSphalerite</defName>
+		<defName>CAL_MineableSphalerite</defName>
 		<label>sphalerite deposit</label>
 		<description>A vein of zinc ore.</description>
 		<graphicData>
-			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<texPath>Cupro/Object/Structure/RockFlecked_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<color>(114,98,89)</color>
@@ -128,11 +82,11 @@
 	</ThingDef>
 	
 	<ThingDef ParentName="RockBase">
-		<defName>EXP_MineableGarnierite</defName>
+		<defName>CAL_MineableGarnierite</defName>
 		<label>garnierite deposit</label>
 		<description>A vein of nickel ore.</description>
 		<graphicData>
-			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<texPath>Cupro/Object/Structure/RockFlecked_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<color>(135,130,95)</color>
@@ -154,11 +108,11 @@
 	</ThingDef>	
 	
 	<ThingDef ParentName="RockBase">
-		<defName>EXP_MineableBismuthinite</defName>
+		<defName>CAL_MineableBismuthinite</defName>
 		<label>bismuthinite deposit</label>
 		<description>A vein of bismuth ore.</description>
 		<graphicData>
-			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<texPath>Cupro/Object/Structure/RockFlecked_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<color>(135,135,105)</color>
@@ -180,11 +134,11 @@
 	</ThingDef>	
 	
 	<ThingDef ParentName="RockBase">
-		<defName>EXP_MineableCopper</defName>
+		<defName>CAL_MineableMalachite</defName>
 		<label>malachite deposit</label>
 		<description>A vein of copper ore.</description>
 		<graphicData>
-			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<texPath>Cupro/Object/Structure/RockFlecked_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<color>(135,130,95)</color>
@@ -196,7 +150,7 @@
 		</statBases>
 		<building>
 			<isResourceRock>true</isResourceRock>
-			<mineableThing>EXP_Copper</mineableThing>
+			<mineableThing>CAL_Copper</mineableThing>
 			<mineableYield>35</mineableYield>
 			<mineableScatterCommonality>0.65</mineableScatterCommonality>
 			<mineableScatterLumpSizeRange>
@@ -207,11 +161,11 @@
 	</ThingDef>
 
 	<ThingDef ParentName="RockBase">
-		<defName>EXP_MineableGalena</defName>
+		<defName>CAL_MineableGalena</defName>
 		<label>galena deposit</label>
 		<description>A vein of lead ore. Traces of silver are also present.</description>
 		<graphicData>
-			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<texPath>Cupro/Object/Structure/RockFlecked_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<color>(114,92,83)</color>
@@ -221,12 +175,14 @@
 			<Beauty>2</Beauty>
 			<MaxHitPoints>1800</MaxHitPoints>
 		</statBases>
-		<blueprintDef>EXP_Lead</blueprintDef>
-		<hideAtSnowDepth>30</hideAtSnowDepth>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<killedLeavings>
+			<Silver>5</Silver>
+		</killedLeavings>
 		<building>
 			<isResourceRock>true</isResourceRock>
-			<mineableThing>EXP_GalenaSpawner</mineableThing>
-			<mineableYield>1</mineableYield>
+			<mineableThing>CAL_Lead</mineableThing>
+			<mineableYield>30</mineableYield>
 			<mineableScatterCommonality>0.65</mineableScatterCommonality>
 			<mineableScatterLumpSizeRange>
 				<min>6</min>
@@ -236,11 +192,11 @@
 	</ThingDef>
 	
 	<ThingDef ParentName="RockBase">
-		<defName>EXP_MineableChromite</defName>
+		<defName>CAL_MineableChromite</defName>
 		<label>chromite deposit</label>
 		<description>A vein of chromium ore.</description>
 		<graphicData>
-			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<texPath>Cupro/Object/Structure/RockFlecked_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<color>(114,92,83)</color>
@@ -261,4 +217,4 @@
 		</building>
 	</ThingDef>	
 
-</Resources>
+</Defs>

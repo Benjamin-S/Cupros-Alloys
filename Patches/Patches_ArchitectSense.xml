@@ -3,21 +3,21 @@
 
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
-		<Operations>
+		<operations>
 			<li Class="CuprosAlloys.PatchOperationFindMod">
 				<modName>Architect Sense</modName>
 			</li>
 			<li Class="PatchOperationInsert">
-				<xpath>/TerrainDefs/TerrainDef[@Name="CAL_AlloyFloorBase"]</xpath>
-				<Order>Prepend</Order>
+				<xpath>/Defs/TerrainDef[@Name="CAL_AlloyFloorBase"]</xpath>
+				<order>Prepend</order>
 				<value>
 					<ArchitectSense.DesignationSubCategoryDef>
 						<defName>SubCategory_CuprosAlloysFloors</defName>
 						<label>Metal Floor</label>
 						<description>Various metal floors from Cupro's Alloys.</description>
 						<defNames>
-							<li>EXP_CopperTile</li>
-							<li>EXP_LeadTile</li>
+							<li>CAL_CopperTile</li>
+							<li>CAL_LeadTile</li>
 							<li>CAL_TinTile</li>
 							<li>CAL_AluminumTile</li>
 							<li>CAL_NickelTile</li>
@@ -29,6 +29,7 @@
 							<li>CAL_ZamakTile</li>
 							<li>CAL_BismuthBronzeTile</li>
 							<li>CAL_BronzeTile</li>
+							<li>CAL_CupronickelTile</li>
 							<li>CAL_StainlessSteelTile</li>
 							<li>CAL_HepatzionTile</li>
 							<li>CAL_BrassTile</li>
@@ -45,7 +46,7 @@
 					</ArchitectSense.DesignationSubCategoryDef>
 				</value>
 			</li>
-		</Operations>
+		</operations>
 	</Operation>
 
 </Patch>

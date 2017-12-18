@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ResearchProjectDefs>
+<Defs>
 
 	<ResearchProjectDef>
 		<defName>CAL_UtilityAlloys</defName>
 		<label>utility alloys</label>
-		<description>Research alloying metals for utility purposes. \n  -Unlocks Plumchalcum, Duralumin, Zamak, Bismuth Bronze, Bronze, Stainless Steel, and Hepatzion.</description>
+		<description>Research alloying metals for utility purposes. \n  -Unlocks Plumchalcum, Duralumin, Zamak, Bismuth Bronze, Bronze, Cupronickel, Stainless Steel, and Hepatzion.</description>
 		<tab>cP</tab>
 		<baseCost>500</baseCost>
 		<techLevel>Medieval</techLevel>
@@ -45,4 +45,4 @@
 	</ResearchProjectDef>
 
 
-</ResearchProjectDefs>
+</Defs>

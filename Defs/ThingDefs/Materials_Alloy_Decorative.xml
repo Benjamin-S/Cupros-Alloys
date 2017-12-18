@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Resources>
+<Defs>
 
 	<!--============================== Decorative Alloys ==============================-->
 
@@ -33,7 +33,7 @@
 				<WorkToBuild>0.9</WorkToBuild>
 				<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
 				<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
-				<MeleeWeapon_Cooldown>1</MeleeWeapon_Cooldown>
+				<MeleeWeapon_CooldownMultiplier>1</MeleeWeapon_CooldownMultiplier>
 			</statFactors>
 		</stuffProps>
 	</ThingDef>
@@ -65,7 +65,7 @@
 				<Flammability>0.2</Flammability>
 				<WorkToMake>0.9</WorkToMake>
 				<WorkToBuild>0.9</WorkToBuild>
-				<MeleeWeapon_Cooldown>1</MeleeWeapon_Cooldown>
+				<MeleeWeapon_CooldownMultiplier>1</MeleeWeapon_CooldownMultiplier>
 			</statFactors>
 		</stuffProps>
 	</ThingDef>
@@ -95,7 +95,7 @@
 				<Beauty>1.5</Beauty>
 				<Cleanliness>1.1</Cleanliness>
 				<Flammability>0.2</Flammability>
-				<MeleeWeapon_Cooldown>1</MeleeWeapon_Cooldown>
+				<MeleeWeapon_CooldownMultiplier>1</MeleeWeapon_CooldownMultiplier>
 			</statFactors>
 		</stuffProps>
 	</ThingDef>
@@ -124,7 +124,7 @@
 				<Flammability>0.2</Flammability>
 				<Beauty>1.5</Beauty>
 				<WorkToMake>1.2</WorkToMake>
-				<MeleeWeapon_Cooldown>1</MeleeWeapon_Cooldown>
+				<MeleeWeapon_CooldownMultiplier>1</MeleeWeapon_CooldownMultiplier>
 			</statFactors>
 		</stuffProps>
 	</ThingDef>
@@ -152,7 +152,7 @@
 				<MaxHitPoints>0.65</MaxHitPoints>
 				<Beauty>4</Beauty>
 				<Flammability>0.2</Flammability>
-				<MeleeWeapon_Cooldown>1</MeleeWeapon_Cooldown>
+				<MeleeWeapon_CooldownMultiplier>1</MeleeWeapon_CooldownMultiplier>
 			</statFactors>
 		</stuffProps>
 	</ThingDef>
@@ -180,12 +180,12 @@
 				<MaxHitPoints>0.65</MaxHitPoints>
 				<Beauty>3.5</Beauty>
 				<Flammability>0.2</Flammability>
-				<MeleeWeapon_Cooldown>1.05</MeleeWeapon_Cooldown>
+				<MeleeWeapon_CooldownMultiplier>1.05</MeleeWeapon_CooldownMultiplier>
 			</statFactors>
 		</stuffProps>
 	</ThingDef>
 
-</Resources>
+</Defs>
 
 
 

@@ -1,26 +1,21 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-	<!-- If Expanded Power is not found, add the resources to the traders -->
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
-		<Operations>
-			<li Class="CuprosAlloys.PatchOperationFindMod">
-				<modName>Expanded Power</modName>
-				<success>Invert</success>
-			</li>
+		<operations>
 			<li Class="PatchOperationAdd">
-				<xpath>/DefPackage-TraderKindDef/TraderKindDef[defName = "Caravan_Outlander_BulkGoods"]/stockGenerators</xpath>
+				<xpath>/Defs/TraderKindDef[defName = "Caravan_Outlander_BulkGoods"]/stockGenerators</xpath>
 				<value>
 					<li Class="StockGenerator_SingleDef">
-						<thingDef>EXP_Copper</thingDef>
+						<thingDef>CAL_Copper</thingDef>
 						<countRange>
 							<min>150</min>
 							<max>300</max>
 						</countRange>
 					</li>
 					<li Class="StockGenerator_SingleDef">
-						<thingDef>EXP_Lead</thingDef>
+						<thingDef>CAL_Lead</thingDef>
 						<countRange>
 							<min>150</min>
 							<max>300</max>
@@ -29,17 +24,17 @@
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/DefPackage-TraderKindDef/TraderKindDef[defName = "Orbital_BulkGoods"]/stockGenerators</xpath>
+				<xpath>/Defs/TraderKindDef[defName = "Orbital_BulkGoods"]/stockGenerators</xpath>
 				<value>
 					<li Class="StockGenerator_SingleDef">
-						<thingDef>EXP_Copper</thingDef>
+						<thingDef>CAL_Copper</thingDef>
 						<countRange>
 							<min>400</min>
 							<max>700</max>
 						</countRange>
 					</li>
 					<li Class="StockGenerator_SingleDef">
-						<thingDef>EXP_Lead</thingDef>
+						<thingDef>CAL_Lead</thingDef>
 						<countRange>
 							<min>400</min>
 							<max>700</max>
@@ -47,18 +42,18 @@
 					</li>
 				</value>
 			</li>
-		</Operations>
+		</operations>
 	</Operation>
 
 	<!-- These resources get assigned to traders regardless -->
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
-		<Operations>
+		<operations>
 			<li Class="PatchOperationAdd">
-				<xpath>/DefPackage-TraderKindDef/TraderKindDef[defName = "Caravan_Outlander_BulkGoods"]/stockGenerators</xpath>
+				<xpath>/Defs/TraderKindDef[defName = "Caravan_Outlander_BulkGoods"]/stockGenerators</xpath>
 				<value>
 					<li Class="StockGenerator_SingleDef">
-						<thingDef>EXP_Tin</thingDef>
+						<thingDef>CAL_Tin</thingDef>
 						<countRange>
 							<min>150</min>
 							<max>300</max>
@@ -95,7 +90,7 @@
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/DefPackage-TraderKindDef/TraderKindDef[defName = "Caravan_Outlander_Exotic"]/stockGenerators</xpath>
+				<xpath>/Defs/TraderKindDef[defName = "Caravan_Outlander_Exotic"]/stockGenerators</xpath>
 				<value>
 					<li Class="StockGenerator_SingleDef">
 						<thingDef>CAL_Plumchalcum</thingDef>
@@ -113,6 +108,13 @@
 					</li>
 					<li Class="StockGenerator_SingleDef">
 						<thingDef>CAL_Bronze</thingDef>
+						<countRange>
+							<min>75</min>
+							<max>200</max>
+						</countRange>
+					</li>
+					<li Class="StockGenerator_SingleDef">
+						<thingDef>CAL_Cupronickel</thingDef>
 						<countRange>
 							<min>75</min>
 							<max>200</max>
@@ -149,10 +151,10 @@
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/DefPackage-TraderKindDef/TraderKindDef[defName = "Orbital_BulkGoods"]/stockGenerators</xpath>
+				<xpath>/Defs/TraderKindDef[defName = "Orbital_BulkGoods"]/stockGenerators</xpath>
 				<value>
 					<li Class="StockGenerator_SingleDef">
-						<thingDef>EXP_Tin</thingDef>
+						<thingDef>CAL_Tin</thingDef>
 						<countRange>
 							<min>400</min>
 							<max>700</max>
@@ -203,7 +205,7 @@
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/DefPackage-TraderKindDef/TraderKindDef[defName = "Orbital_Exotic"]/stockGenerators</xpath>
+				<xpath>/Defs/TraderKindDef[defName = "Orbital_Exotic"]/stockGenerators</xpath>
 				<value>
 					<li Class="StockGenerator_SingleDef">
 						<thingDef>CAL_ChromePlatedSteel</thingDef>
@@ -242,7 +244,7 @@
 					</li>
 				</value>
 			</li>
-		</Operations>
+		</operations>
 	</Operation>
 
 </Patch>

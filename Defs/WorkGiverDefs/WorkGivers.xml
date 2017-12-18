@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<WorkGivers>
-
-	<WorkGiverDef Name="CAL_CrucibleInsertion" Abstract="True">
-	</WorkGiverDef>
-
-</WorkGivers>

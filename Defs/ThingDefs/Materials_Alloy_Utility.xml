@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Resources>
+<Defs>
 
 	<ThingDef Name="IngotBase" ParentName="MetalBase" Abstract="True">
 		<graphicData>
@@ -34,7 +34,7 @@
 				<Beauty>1</Beauty>
 				<Cleanliness>0.95</Cleanliness>
 				<Flammability>0.2</Flammability>
-				<MeleeWeapon_Cooldown>1.1</MeleeWeapon_Cooldown>
+				<MeleeWeapon_CooldownMultiplier>1.1</MeleeWeapon_CooldownMultiplier>
 				<WorkToMake>0.8</WorkToMake>
 				<WorkToBuild>0.8</WorkToBuild>
 				<ArmorRating_Blunt>1.1</ArmorRating_Blunt>
@@ -71,7 +71,7 @@
 				<Cleanliness>1.15</Cleanliness>
 				<Flammability>0.2</Flammability>
 				<DoorOpenSpeed>1.1</DoorOpenSpeed>
-				<MeleeWeapon_Cooldown>0.7</MeleeWeapon_Cooldown>
+				<MeleeWeapon_CooldownMultiplier>0.7</MeleeWeapon_CooldownMultiplier>
 				<WorkToMake>0.8</WorkToMake>
 				<WorkToBuild>0.8</WorkToBuild>
 			</statFactors>
@@ -98,7 +98,7 @@
 			<statFactors>
 				<MaxHitPoints>0.9</MaxHitPoints>
 				<Flammability>0.2</Flammability>
-				<MeleeWeapon_Cooldown>0.7</MeleeWeapon_Cooldown>
+				<MeleeWeapon_CooldownMultiplier>0.7</MeleeWeapon_CooldownMultiplier>
 				<WorkToMake>0.75</WorkToMake>
 				<WorkToBuild>0.75</WorkToBuild>
 				<ArmorRating_Sharp>0.85</ArmorRating_Sharp>
@@ -127,7 +127,7 @@
 			<statFactors>
 				<MaxHitPoints>0.95</MaxHitPoints>
 				<Flammability>0.2</Flammability>
-				<MeleeWeapon_Cooldown>1</MeleeWeapon_Cooldown>
+				<MeleeWeapon_CooldownMultiplier>1</MeleeWeapon_CooldownMultiplier>
 			</statFactors>
 		</stuffProps>
 	</ThingDef>
@@ -152,7 +152,35 @@
 			<statFactors>
 				<MaxHitPoints>0.95</MaxHitPoints>
 				<Flammability>0.2</Flammability>
-				<MeleeWeapon_Cooldown>1</MeleeWeapon_Cooldown>
+				<MeleeWeapon_CooldownMultiplier>1</MeleeWeapon_CooldownMultiplier>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+	<ThingDef ParentName="IngotBase">
+		<defName>CAL_Cupronickel</defName>
+		<label>cupronickel</label>
+		<description>A resilient alloy of copper and nickel. Can be used for building structures, tools, and weapons.</description>
+		<graphicData>
+			<texPath>Cupro/Item/Material/Ingot_Dull</texPath>
+			<color>(190,180,175)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.9</MarketValue>
+			<Mass>0.4</Mass>
+			<SharpDamageMultiplier>0.9</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1</BluntDamageMultiplier>
+		</statBases>
+		<techLevel>Medieval</techLevel>
+		<stuffProps>
+			<color>(195,172,164)</color>
+			<statFactors>
+				<MaxHitPoints>0.9</MaxHitPoints>
+				<Flammability>0.2</Flammability>
+				<Cleanliness>1.05</Cleanliness>
+				<MeleeWeapon_CooldownMultiplier>1</MeleeWeapon_CooldownMultiplier>
+				<WorkToMake>0.85</WorkToMake>
+				<WorkToBuild>0.85</WorkToBuild>
 			</statFactors>
 		</stuffProps>
 	</ThingDef>
@@ -202,12 +230,12 @@
 				<MaxHitPoints>0.9</MaxHitPoints>
 				<Beauty>1.2</Beauty>
 				<Flammability>0.2</Flammability>
-				<MeleeWeapon_Cooldown>1</MeleeWeapon_Cooldown>
+				<MeleeWeapon_CooldownMultiplier>1</MeleeWeapon_CooldownMultiplier>
 			</statFactors>
 		</stuffProps>
 	</ThingDef>
 
-</Resources>
+</Defs>
 
 
 

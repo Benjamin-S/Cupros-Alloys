@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Resources>
+<Defs>
 
 	<!--============================== Advanced Alloys ==============================-->
 
@@ -27,7 +27,7 @@
 			<statFactors>
 				<MaxHitPoints>1.2</MaxHitPoints>
 				<Flammability>0.2</Flammability>
-				<MeleeWeapon_Cooldown>1</MeleeWeapon_Cooldown>
+				<MeleeWeapon_CooldownMultiplier>1</MeleeWeapon_CooldownMultiplier>
 				<ArmorRating_Blunt>1.2</ArmorRating_Blunt>
 				<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
 			</statFactors>
@@ -55,7 +55,7 @@
 			<statFactors>
 				<MaxHitPoints>1.5</MaxHitPoints>
 				<Flammability>0.2</Flammability>
-				<MeleeWeapon_Cooldown>0.8</MeleeWeapon_Cooldown>
+				<MeleeWeapon_CooldownMultiplier>0.8</MeleeWeapon_CooldownMultiplier>
 				<WorkToMake>0.9</WorkToMake>
 				<WorkToBuild>0.9</WorkToBuild>
 				<ArmorRating_Blunt>1.4</ArmorRating_Blunt>
@@ -64,7 +64,7 @@
 		</stuffProps>
 	</ThingDef>
 
-</Resources>
+</Defs>
 
 
 
