@@ -1,23 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef Name="IngotBase" ParentName="MetalBase" Abstract="True">
-		<graphicData>
-			<graphicClass>Graphic_StackCount</graphicClass>
-		</graphicData>
-		<stackLimit>150</stackLimit>
-	</ThingDef>
-
-
 	<!--============================== Utility Alloys ==============================-->
 
 
-	<ThingDef ParentName="IngotBase">
+	<ThingDef ParentName="CAL_DullIngotBase">
 		<defName>CAL_Plumchalcum</defName>
 		<label>plumchalcum</label>
 		<description>An alloy of lead and copper used in ancient times for plateware and utensils. Can be used for building structures, tools, and weapons.</description>
 		<graphicData>
-			<texPath>Cupro/Item/Material/Ingot_Dull</texPath>
 			<color>(97,92,86)</color>
 		</graphicData>
 		<statBases>
@@ -28,6 +19,9 @@
 		</statBases>
 		<techLevel>Medieval</techLevel>
 		<stuffProps>
+			<categories>
+				<li>Metallic</li>
+			</categories>
 			<color>(97,92,86)</color>
 			<statFactors>
 				<MaxHitPoints>0.85</MaxHitPoints>
@@ -46,12 +40,11 @@
 		</stuffProps>
 	</ThingDef>
 
-	<ThingDef ParentName="IngotBase">
+	<ThingDef ParentName="CAL_DullIngotBase">
 		<defName>CAL_Duralumin</defName>
 		<label>duralumin</label>
 		<description>An light and strong alloy of aluminum and copper. Can be used for building structures, tools, and weapons.</description>
 		<graphicData>
-			<texPath>Cupro/Item/Material/Ingot_Dull</texPath>
 			<color>(220,214,208)</color>
 		</graphicData>
 		<statBases>
@@ -62,6 +55,9 @@
 		</statBases>
 		<techLevel>Industrial</techLevel>
 		<stuffProps>
+			<categories>
+				<li>Metallic</li>
+			</categories>
 			<statOffsets>
 				<Beauty>2</Beauty>
 			</statOffsets>
@@ -78,12 +74,11 @@
 		</stuffProps>
 	</ThingDef>
 
-	<ThingDef ParentName="IngotBase">
+	<ThingDef ParentName="CAL_DullIngotBase">
 		<defName>CAL_Zamak</defName>
 		<label>zamak</label>
 		<description>A soft, yet strong alloy of aluminum and zinc which is easily built with. Can be used for building structures, tools, and weapons.</description>
 		<graphicData>
-			<texPath>Cupro/Item/Material/Ingot_Dull</texPath>
 			<color>(179, 183, 187)</color>
 		</graphicData>
 		<statBases>
@@ -94,6 +89,9 @@
 		</statBases>
 		<techLevel>Industrial</techLevel>
 		<stuffProps>
+			<categories>
+				<li>Metallic</li>
+			</categories>
 			<color>(179, 183, 187)</color>
 			<statFactors>
 				<MaxHitPoints>0.9</MaxHitPoints>
@@ -107,12 +105,11 @@
 		</stuffProps>
 	</ThingDef>
 	
-	<ThingDef ParentName="IngotBase">
+	<ThingDef ParentName="CAL_DullIngotBase">
 		<defName>CAL_BismuthBronze</defName>
 		<label>bismuth bronze</label>
 		<description>A strong alloy of copper, zinc, and bismuth used in ancient times before the discovery of steel. Can be used for building structures, tools, and weapons.</description>
 		<graphicData>
-			<texPath>Cupro/Item/Material/Ingot_Dull</texPath>
 			<color>(121,128,101)</color>
 		</graphicData>
 		<statBases>
@@ -123,6 +120,9 @@
 		</statBases>
 		<techLevel>Medieval</techLevel>
 		<stuffProps>
+			<categories>
+				<li>Metallic</li>
+			</categories>
 			<color>(121,128,101)</color>
 			<statFactors>
 				<MaxHitPoints>0.95</MaxHitPoints>
@@ -132,12 +132,11 @@
 		</stuffProps>
 	</ThingDef>
 
-	<ThingDef ParentName="IngotBase">
+	<ThingDef ParentName="CAL_DullIngotBase">
 		<defName>CAL_Bronze</defName>
 		<label>bronze</label>
 		<description>A strong alloy of copper and tin or zinc used in ancient times before the discovery of steel. Can be used for building structures, tools, and weapons.</description>
 		<graphicData>
-			<texPath>Cupro/Item/Material/Ingot_Dull</texPath>
 			<color>(87,69,34)</color>
 		</graphicData>
 		<statBases>
@@ -148,6 +147,9 @@
 		</statBases>
 		<techLevel>Medieval</techLevel>
 		<stuffProps>
+			<categories>
+				<li>Metallic</li>
+			</categories>
 			<color>(87,69,34)</color>
 			<statFactors>
 				<MaxHitPoints>0.95</MaxHitPoints>
@@ -157,12 +159,11 @@
 		</stuffProps>
 	</ThingDef>
 
-	<ThingDef ParentName="IngotBase">
+	<ThingDef ParentName="CAL_DullIngotBase">
 		<defName>CAL_Cupronickel</defName>
 		<label>cupronickel</label>
 		<description>A resilient alloy of copper and nickel. Can be used for building structures, tools, and weapons.</description>
 		<graphicData>
-			<texPath>Cupro/Item/Material/Ingot_Dull</texPath>
 			<color>(190,180,175)</color>
 		</graphicData>
 		<statBases>
@@ -173,6 +174,9 @@
 		</statBases>
 		<techLevel>Medieval</techLevel>
 		<stuffProps>
+			<categories>
+				<li>Metallic</li>
+			</categories>
 			<color>(195,172,164)</color>
 			<statFactors>
 				<MaxHitPoints>0.9</MaxHitPoints>
@@ -185,12 +189,11 @@
 		</stuffProps>
 	</ThingDef>
 	
-	<ThingDef ParentName="IngotBase">
+	<ThingDef ParentName="CAL_DullIngotBase">
 		<defName>CAL_StainlessSteel</defName>
 		<label>stainless steel</label>
 		<description>An alloy of steel, chromium, and nickel well known for it's ability to be sterilized. Can be used for building structures, tools, and weapons.</description>
 		<graphicData>
-			<texPath>Cupro/Item/Material/Ingot_Dull</texPath>
 			<color>(200, 200, 200)</color>
 		</graphicData>
 		<statBases>
@@ -201,20 +204,23 @@
 		</statBases>
 		<techLevel>Industrial</techLevel>
 		<stuffProps>
+			<categories>
+				<li>Metallic</li>
+			</categories>
 			<color>(200,200,200)</color>
 			<statFactors>
 				<Cleanliness>1.3</Cleanliness>
+				<ImmunityGainSpeedFactor>1.3</ImmunityGainSpeedFactor>
 				<Flammability>0.2</Flammability>
 			</statFactors>
 		</stuffProps>
 	</ThingDef>
 
-	<ThingDef ParentName="IngotBase">
+	<ThingDef ParentName="CAL_DullIngotBase">
 		<defName>CAL_Hepatzion</defName>
 		<label>hepatzion</label>
 		<description>A valuable metal alloy with a decent strength, often used for making sculptures. Can also be used for building structures, tools, and weapons.</description>
 		<graphicData>
-			<texPath>Cupro/Item/Material/Ingot_Dull</texPath>
 			<color>(65,51,70)</color>
 		</graphicData>
 		<statBases>
@@ -225,6 +231,9 @@
 		</statBases>
 		<techLevel>Medieval</techLevel>
 		<stuffProps>
+			<categories>
+				<li>Metallic</li>
+			</categories>
 			<color>(65,51,70)</color>
 			<statFactors>
 				<MaxHitPoints>0.9</MaxHitPoints>
