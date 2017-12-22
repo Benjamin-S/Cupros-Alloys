@@ -28,6 +28,7 @@
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
 		<techLevel>Neolithic</techLevel>
+    <stackLimit>75</stackLimit>
 	</ThingDef>
 
 	<ThingDef Name="CAL_DullIngotBase" ParentName="CAL_MetalBase" Abstract="True">
@@ -38,12 +39,8 @@
 		<stackLimit>150</stackLimit>
 	</ThingDef>
 
-	<ThingDef Name="CAL_ShinyIngotBase" ParentName="CAL_MetalBase" Abstract="True">
-		<graphicData>
-			<texPath>Cupro/Item/Material/Ingot_Shiny</texPath>
-			<graphicClass>Graphic_StackCount</graphicClass>
-		</graphicData>
-		<stackLimit>150</stackLimit>
+	<ThingDef Name="CAL_ShinyIngotBase" ParentName="CAL_DullIngotBase" Abstract="True">
+		<graphicData><texPath>Cupro/Item/Material/Ingot_Shiny</texPath></graphicData>
 	</ThingDef>
 
 
