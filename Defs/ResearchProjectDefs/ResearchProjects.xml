@@ -12,7 +12,7 @@
 			<li>ElectricSmelting</li>
 		</prerequisites>
 		<researchViewX>0</researchViewX>
-		<researchViewY>4</researchViewY>
+		<researchViewY>3</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -25,8 +25,8 @@
 		<prerequisites>
 			<li>ElectricSmelting</li>
 		</prerequisites>
-		<researchViewX>1</researchViewX>
-		<researchViewY>4.5</researchViewY>
+		<researchViewX>2</researchViewX>
+		<researchViewY>3</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -40,8 +40,8 @@
 			<li>CAL_UtilityAlloys</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-		<researchViewX>2</researchViewX>
-		<researchViewY>4</researchViewY>
+		<researchViewX>1</researchViewX>
+		<researchViewY>3.5</researchViewY>
 	</ResearchProjectDef>
 
 
