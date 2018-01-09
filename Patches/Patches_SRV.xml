@@ -59,7 +59,7 @@
 				<modName>Survivalist's Additions</modName>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/RecipeDef[@Name="AlloyBase"]/recipeUsers</xpath>
+				<xpath>/Defs/RecipeDef[@Name="CAL_RecipeAlloyBase"]/recipeUsers</xpath>
 				<value>
 					<li>SRV_Forge</li>
 				</value>
