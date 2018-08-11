@@ -115,6 +115,7 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>6.25</MarketValue>
+			<Mass>0.8</Mass>
 			<SharpDamageMultiplier>0.6</SharpDamageMultiplier>
 			<BluntDamageMultiplier>1.2</BluntDamageMultiplier>
 		</statBases>
@@ -146,6 +147,7 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>45.6</MarketValue>
+			<Mass>1.1</Mass>
 			<SharpDamageMultiplier>0.7</SharpDamageMultiplier>
 			<BluntDamageMultiplier>1.5</BluntDamageMultiplier>
 		</statBases>
@@ -176,6 +178,7 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>49.4</MarketValue>
+			<Mass>1</Mass>
 			<SharpDamageMultiplier>0.4</SharpDamageMultiplier>
 			<BluntDamageMultiplier>1.13</BluntDamageMultiplier>
 		</statBases>

@@ -3,17 +3,20 @@ using System.Xml;
 
 using Verse;
 
-namespace CuprosAlloys {
+namespace CuprosAlloys
+{
 
-  internal class PatchOperationFindMod : PatchOperation {
+    internal class PatchOperationFindMod : PatchOperation
+    {
+        private string modName;
 
-    private string modName;
-
-    protected override bool ApplyWorker(XmlDocument xml) {
-      if (modName.NullOrEmpty()) {
-        return false;
-      }
-      return ModsConfig.ActiveModsInLoadOrder.Any(m => m.Name == modName);
+        protected override bool ApplyWorker(XmlDocument xml)
+        {
+            if (modName.NullOrEmpty())
+            {
+                return false;
+            }
+            return ModsConfig.ActiveModsInLoadOrder.Any(m => m.Name == modName);
+        }
     }
-  }
 }

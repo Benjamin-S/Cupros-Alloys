@@ -33,7 +33,7 @@
 				<WorkToBuild>0.8</WorkToBuild>
 				<ArmorRating_Blunt>1.1</ArmorRating_Blunt>
 				<ArmorRating_Sharp>0.9</ArmorRating_Sharp>
-				<ArmorRating_Electric>0.9</ArmorRating_Electric>
+				<!-- Deprecated Armor Type <ArmorRating_Electric>0.9</ArmorRating_Electric> -->
 				<!-- Lead is poisonous, so it affects immune speed when made into a bed -->
 				<ImmunityGainSpeedFactor>0.95</ImmunityGainSpeedFactor>
 			</statFactors>
@@ -43,7 +43,7 @@
 	<ThingDef ParentName="CAL_DullIngotBase">
 		<defName>CAL_Duralumin</defName>
 		<label>duralumin</label>
-		<description>An light and strong alloy of aluminum and copper. Can be used for building structures, tools, and weapons.</description>
+		<description>A light and strong alloy of aluminum and copper. Can be used for building structures, tools, and weapons.</description>
 		<graphicData>
 			<color>(220,214,208)</color>
 		</graphicData>
