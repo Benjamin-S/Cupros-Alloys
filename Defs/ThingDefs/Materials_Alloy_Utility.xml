@@ -31,8 +31,8 @@
 				<MeleeWeapon_CooldownMultiplier>1.1</MeleeWeapon_CooldownMultiplier>
 				<WorkToMake>0.8</WorkToMake>
 				<WorkToBuild>0.8</WorkToBuild>
-				<ArmorRating_Blunt>1.1</ArmorRating_Blunt>
-				<ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+				<!-- <ArmorRating_Blunt>1.1</ArmorRating_Blunt>
+				<ArmorRating_Sharp>0.9</ArmorRating_Sharp> -->
 				<!-- Deprecated Armor Type <ArmorRating_Electric>0.9</ArmorRating_Electric> -->
 				<!-- Lead is poisonous, so it affects immune speed when made into a bed -->
 				<ImmunityGainSpeedFactor>0.95</ImmunityGainSpeedFactor>
@@ -99,8 +99,8 @@
 				<MeleeWeapon_CooldownMultiplier>0.7</MeleeWeapon_CooldownMultiplier>
 				<WorkToMake>0.75</WorkToMake>
 				<WorkToBuild>0.75</WorkToBuild>
-				<ArmorRating_Sharp>0.85</ArmorRating_Sharp>
-				<ArmorRating_Blunt>0.95</ArmorRating_Blunt>
+				<!-- <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+				<ArmorRating_Blunt>0.95</ArmorRating_Blunt> -->
 			</statFactors>
 		</stuffProps>
 	</ThingDef>

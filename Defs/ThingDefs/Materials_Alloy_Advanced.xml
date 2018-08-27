@@ -30,8 +30,8 @@
 				<MaxHitPoints>1.2</MaxHitPoints>
 				<Flammability>0.2</Flammability>
 				<MeleeWeapon_CooldownMultiplier>1</MeleeWeapon_CooldownMultiplier>
-				<ArmorRating_Blunt>1.2</ArmorRating_Blunt>
-				<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+				<!-- <ArmorRating_Blunt>1.2</ArmorRating_Blunt>
+				<ArmorRating_Sharp>1.2</ArmorRating_Sharp> -->
 			</statFactors>
 		</stuffProps>
 	</ThingDef>
@@ -62,8 +62,8 @@
 				<MeleeWeapon_CooldownMultiplier>0.8</MeleeWeapon_CooldownMultiplier>
 				<WorkToMake>0.9</WorkToMake>
 				<WorkToBuild>0.9</WorkToBuild>
-				<ArmorRating_Blunt>1.4</ArmorRating_Blunt>
-				<ArmorRating_Sharp>1.4</ArmorRating_Sharp>
+				<!-- <ArmorRating_Blunt>1.4</ArmorRating_Blunt>
+				<ArmorRating_Sharp>1.4</ArmorRating_Sharp> -->
 			</statFactors>
 		</stuffProps>
 	</ThingDef>

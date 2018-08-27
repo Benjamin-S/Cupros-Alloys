@@ -27,8 +27,13 @@
 		<graphicData>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
+		<statBases>
+			<StuffPower_Armor_Blunt>0.6</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Sharp>1.0</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Heat>0.4</StuffPower_Armor_Heat>
+		</statBases>
 		<techLevel>Neolithic</techLevel>
-    <stackLimit>75</stackLimit>
+		<stackLimit>75</stackLimit>
 	</ThingDef>
 
 	<ThingDef Name="CAL_DullIngotBase" ParentName="CAL_MetalBase" Abstract="True">
@@ -36,11 +41,23 @@
 			<texPath>Cupro/Item/Material/Ingot_Dull</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
+		<statBases>
+			<StuffPower_Armor_Blunt>0.6</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Sharp>1.0</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Heat>0.4</StuffPower_Armor_Heat>
+		</statBases>
 		<stackLimit>150</stackLimit>
 	</ThingDef>
 
 	<ThingDef Name="CAL_ShinyIngotBase" ParentName="CAL_DullIngotBase" Abstract="True">
-		<graphicData><texPath>Cupro/Item/Material/Ingot_Shiny</texPath></graphicData>
+		<graphicData>
+			<texPath>Cupro/Item/Material/Ingot_Shiny</texPath>
+		</graphicData>
+		<statBases>
+			<StuffPower_Armor_Blunt>0.65</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Sharp>1.1</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Heat>0.4</StuffPower_Armor_Heat>
+		</statBases>
 	</ThingDef>
 
 
@@ -65,9 +82,9 @@
 		<deepLumpSizeRange>
 			<min>20</min>
 			<max>40</max>
-    	</deepLumpSizeRange>
+		</deepLumpSizeRange>
 		<stuffProps>
-		<!-- The categories node is included for CE patching -->
+			<!-- The categories node is included for CE patching -->
 			<categories>
 				<li>Metallic</li>
 			</categories>
@@ -98,13 +115,16 @@
 			<Mass>1.2</Mass>
 			<SharpDamageMultiplier>0.3</SharpDamageMultiplier>
 			<BluntDamageMultiplier>1.2</BluntDamageMultiplier>
+			<StuffPower_Armor_Blunt>1.2</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Sharp>0.8</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Heat>0.72</StuffPower_Armor_Heat>
 		</statBases>
 		<deepCommonality>0.4</deepCommonality>
 		<deepCountPerPortion>10</deepCountPerPortion>
 		<deepLumpSizeRange>
 			<min>10</min>
 			<max>20</max>
-    	</deepLumpSizeRange>
+		</deepLumpSizeRange>
 		<stuffProps>
 			<categories>
 				<li>Metallic</li>
@@ -119,8 +139,8 @@
 				<MeleeWeapon_CooldownMultiplier>1.15</MeleeWeapon_CooldownMultiplier>
 				<WorkToMake>0.8</WorkToMake>
 				<WorkToBuild>0.75</WorkToBuild>
-				<ArmorRating_Blunt>1.2</ArmorRating_Blunt>
-				<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+				<!-- <ArmorRating_Blunt>1.2</ArmorRating_Blunt>
+				<ArmorRating_Sharp>0.8</ArmorRating_Sharp> -->
 				<!-- Lead is poisonous, so it affects immune speed when made into a bed -->
 				<ImmunityGainSpeedFactor>0.75</ImmunityGainSpeedFactor>
 			</statFactors>
@@ -139,6 +159,9 @@
 			<Mass>0.3</Mass>
 			<SharpDamageMultiplier>0.6</SharpDamageMultiplier>
 			<BluntDamageMultiplier>0.6</BluntDamageMultiplier>
+			<StuffPower_Armor_Blunt>1</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Sharp>0.4</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Heat>0.72</StuffPower_Armor_Heat>
 		</statBases>
 		<deepCommonality>0.5</deepCommonality>
 		<deepCountPerPortion>40</deepCountPerPortion>
@@ -159,7 +182,7 @@
 				<MeleeWeapon_CooldownMultiplier>0.8</MeleeWeapon_CooldownMultiplier>
 				<WorkToMake>0.8</WorkToMake>
 				<WorkToBuild>0.8</WorkToBuild>
-				<ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+				<!-- <ArmorRating_Sharp>0.9</ArmorRating_Sharp> -->
 			</statFactors>
 		</stuffProps>
 	</ThingDef>
@@ -176,6 +199,9 @@
 			<Mass>0.2</Mass>
 			<SharpDamageMultiplier>0.7</SharpDamageMultiplier>
 			<BluntDamageMultiplier>0.7</BluntDamageMultiplier>
+			<StuffPower_Armor_Blunt>0.9</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Sharp>0.8</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Heat>0.72</StuffPower_Armor_Heat>
 		</statBases>
 		<deepCommonality>2.5</deepCommonality>
 		<deepCountPerPortion>40</deepCountPerPortion>
@@ -200,8 +226,8 @@
 				<MeleeWeapon_CooldownMultiplier>1</MeleeWeapon_CooldownMultiplier>
 				<WorkToMake>0.8</WorkToMake>
 				<WorkToBuild>0.8</WorkToBuild>
-				<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
-				<ArmorRating_Blunt>0.9</ArmorRating_Blunt>
+				<!-- <ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+				<ArmorRating_Blunt>0.9</ArmorRating_Blunt> -->
 			</statFactors>
 		</stuffProps>
 	</ThingDef>
@@ -218,6 +244,9 @@
 			<Mass>0.3</Mass>
 			<SharpDamageMultiplier>0.9</SharpDamageMultiplier>
 			<BluntDamageMultiplier>0.85</BluntDamageMultiplier>
+			<StuffPower_Armor_Blunt>0.8</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Sharp>0.9</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Heat>0.72</StuffPower_Armor_Heat>
 		</statBases>
 		<deepCommonality>1.2</deepCommonality>
 		<deepCountPerPortion>40</deepCountPerPortion>
@@ -237,8 +266,8 @@
 				<MeleeWeapon_CooldownMultiplier>0.95</MeleeWeapon_CooldownMultiplier>
 				<WorkToMake>0.7</WorkToMake>
 				<WorkToBuild>0.7</WorkToBuild>
-				<ArmorRating_Sharp>0.9</ArmorRating_Sharp>
-				<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+				<!-- <ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+				<ArmorRating_Blunt>0.8</ArmorRating_Blunt> -->
 			</statFactors>
 		</stuffProps>
 	</ThingDef>
@@ -255,6 +284,9 @@
 			<Mass>0.3</Mass>
 			<SharpDamageMultiplier>1.1</SharpDamageMultiplier>
 			<BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+			<StuffPower_Armor_Blunt>0.75</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Sharp>0.65</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Heat>0.72</StuffPower_Armor_Heat>
 		</statBases>
 		<deepCommonality>1.5</deepCommonality>
 		<deepCountPerPortion>40</deepCountPerPortion>
@@ -275,8 +307,8 @@
 				<MeleeWeapon_CooldownMultiplier>1</MeleeWeapon_CooldownMultiplier>
 				<WorkToMake>0.75</WorkToMake>
 				<WorkToBuild>0.75</WorkToBuild>
-				<ArmorRating_Sharp>0.65</ArmorRating_Sharp>
-				<ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+				<!-- <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+				<ArmorRating_Blunt>0.75</ArmorRating_Blunt> -->
 			</statFactors>
 		</stuffProps>
 	</ThingDef>
@@ -352,8 +384,8 @@
 				<Cleanliness>1.5</Cleanliness>
 				<Flammability>0.15</Flammability>
 				<MeleeWeapon_CooldownMultiplier>1</MeleeWeapon_CooldownMultiplier>
-				<ArmorRating_Sharp>1.1</ArmorRating_Sharp>
-				<ArmorRating_Blunt>1.1</ArmorRating_Blunt>
+				<!-- <ArmorRating_Sharp>1.1</ArmorRating_Sharp>
+				<ArmorRating_Blunt>1.1</ArmorRating_Blunt> -->
 			</statFactors>
 		</stuffProps>
 	</ThingDef>
